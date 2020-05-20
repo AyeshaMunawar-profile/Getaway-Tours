@@ -1,32 +1,33 @@
-/*
-COLORS:
 
-White: #fff9f0
-Black: #221b22
-grey:  #4d454d
+:root {
+    --White: #fff9f0;
+    --Black: #221b22;
+    --Grey: #4d454d;
 
-primary color : ORANGE
-Dark Orange : #e68572
-Light Orange : #f9aa89
+    /*Primary Color : ORANGE*/
+    --Dark-Orange: #e68572;
+    --Light-Orange: #f9aa89;
 
-Secondary color:  Purple
-Light Purple: #f3c9cb
-Dark purple : #97667b
-Darker Purple: #504050
+    /*Secondary color: Purple */
+    --Light-purple: #f3c9cb;
+    --Dark-purple: #97667b;
+    --Darkest-Purple: #504050;
 
-Tertiary color:  sea green
-sea green dark: #174B5B
-sea green light: #6DBCD5
+    /*Tertiary color: sea green*/
+    --Dark-sea-green: #174B5B;
+    --Green: #47A48B;
+    --Light-green: #6ECCA5;
 
-Quaternary color: Mid Green
-dark green: #47A48B
-light green: #6ECCA5
+    /*Fourth Color : Yellow */
+    --Light-yellow: #ffefd6;
 
-Fifth Color : Light yellow
-Lightest yellow : #ffefd6
 
-*/
+}
 
+/* Basic reset of the html page
+   universal selector
+   box-sizing: border-box : no extra padding or margin added to the element
+   except the height and width of the element */
 * {
     margin: 0;
     padding: 0;
@@ -38,12 +39,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #4d454d;
+    color: var(--Grey);
+    padding: 30px;
 }
 
-.header{
+.header {
     height: 95vh;
-    background: url("../img/nat-38.jpg") no-repeat center fixed;
+    background-image: linear-gradient(to right bottom, rgba(151, 102, 123,0.7), rgba(230, 133, 114, 0.6),
+    rgba(230, 133, 114,0.7)), url("../img/nat-34-b.jpg");
     background-size: cover;
-
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
