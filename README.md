@@ -9,5 +9,7 @@ section.
 **Sections 1: Building the header**
 1) The best way to perform a basic reset using universal selector
 2) How to set project wide font definition
-3) How to clip parts of element using clip-path   
+3) How to clip parts of element using clip-path
+4) How to position an element in center and study relative position vs absolute position    
+5) How to add animations using @keyframes
 

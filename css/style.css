@@ -21,7 +21,7 @@
     /*Fourth Color : Yellow */
     --Light-yellow: #ffefd6;
     /*fonts*/
---Roboto-default: "Roboto", sans-serif;
+    --Roboto-default: "Roboto", sans-serif;
     --Lato-default: "Lato", sans-serif;
 }
 
@@ -47,16 +47,16 @@ body {
 .header {
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(151, 102, 123, 0.7), rgba(230, 133, 114, 0.7),
+    background-image: linear-gradient(to right bottom, rgba(151, 102, 123, 0.7), rgba(230, 133, 114, 0.75),
     rgba(230, 133, 114, 0.7)), url("../img/nat-34-b.jpg");
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.text-box{
+.text-box {
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 48%;
     transform: translate(-45%, -50%);
 }
@@ -74,6 +74,8 @@ body {
 .heading-primary {
     color: var(--White);
     text-transform: uppercase;
+    /*correct the shaky animation*/
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -81,13 +83,50 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
-    font-family: var(--Roboto-default);
+    text-align: center;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    /*animation-iteration-count: 3;*/
+    /*animation-delay: 3s;*/
+
 }
 
 .heading-primary-sub {
     font-size: 25px;
     font-weight: 700;
-    word-spacing: 60px;
-    letter-spacing: 27px;
+    word-spacing: 45px;
+    letter-spacing: 23px;
     display: block;
+    text-align: center;
+    animation: moveInRight 1s ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
