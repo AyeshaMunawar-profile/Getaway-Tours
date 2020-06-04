@@ -12,4 +12,7 @@ section.
 3) How to clip parts of element using clip-path
 4) How to position an element in center and study relative position vs absolute position    
 5) How to add animations using @keyframes
+5) What pseudo-elements are and whats pseudo classes are 
+6) How and why to use the :: after pseudo - element 
+7) how to create a creative hover animation effect using transition property  
 
