@@ -14,5 +14,9 @@ section.
 5) How to add animations using @keyframes
 5) What pseudo-elements are and whats pseudo classes are 
 6) How and why to use the :: after pseudo - element 
-7) how to create a creative hover animation effect using transition property  
-
+7) how to create a creative hover animation effect using transition property 
+**Section 2: Understanding how css works**
+1) How css is parsed 
+2) How inheritance works 
+3) How to use different units of measurements like vh vw % em rem or px appropriately 
+4) css architecture , components and BEM 
