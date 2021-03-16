@@ -77,7 +77,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     overflow: hidden;
 }
-.moving-clouds {
+.header__moving-clouds {
     filter: sepia(100%);
     opacity: .7;
     position: absolute;
@@ -89,7 +89,7 @@ body {
     -webkit-animation: cloudLoop 80s linear infinite;
     animation: cloudLoop 80s linear infinite;
 }
-.text-box {
+.header__text-box {
     position: absolute;
     top: 39%;
     left: 48%;
@@ -97,13 +97,13 @@ body {
     text-align: center;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 5rem;
     width: auto;
 }
@@ -115,7 +115,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 300;
@@ -130,7 +130,7 @@ body {
 
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     font-size: 2.5rem;
     font-weight: 400;
     word-spacing: 1.6rem;
@@ -179,17 +179,17 @@ body {
     opacity: 0;
 }
 
-.btn-white {
+.btn--white {
     background-color: var(--White);
     color: var(--Grey);
     padding: 1.5rem 4rem;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: var(--White);
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInFromBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
 }
