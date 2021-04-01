@@ -36,7 +36,7 @@ section.
       folders . We put 7 folder with partial sass filed and one main sass files to import all the other files into a compiled css style sheet.
       These folders are 
         
-        i)    Base: The basic definitions related tot he project
+        i)    Base: The basic definitions related to the project
         ii)   Components: Each component gets a separate sass file 
         iii)  Layout: The files that defnes the overall layout of the components in a page 
         iV)   Pages: The sass files with code specific to each page 
