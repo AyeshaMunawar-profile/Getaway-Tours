@@ -1,27 +1,31 @@
 //Variables
-/*Neutral Colors */
-$color-white: #fff9f0;
-$color-black: #221b22;
-$color-grey: #4d454d;
+/*Neutral Colors BLACK GREY OFF-WHITE AND WHITE*/
+$neutral-color-white: #fffbf7;
+$neutral-color-off-white: #f3f1e8;
+$neutral-color-black: #221b22;
+$neutral-color-grey: #4d4546;
 
-/*Primary Color : ORANGE*/
-$color-dark-Orange: #e68572;
-$color-light-Orange: #f9aa89;
+/*Primary Color : ORANGE & GREEN*/
+$primary-color-orange__1: #e06d56;
+$primary-color-orange__0: #e68572;
+$primary-color-orange__-1: #f9aa89;
+$secondary-color-green__-1: #7ceebf;
+$secondary-color-green__-1: #6ECCA5;
+$secondary-color-green__0: #47A48B;
+$secondary-color-green__1: #174B5B;
 
-/*Secondary color: Purple */
-$color-light-purple: #f3c9cb;
-$color-dark-purple: #97667b;
-$color-darkest-Purple: #504050;
+/*Secondary color: PURPLE */
+$secondary-color-purple__-2: #f3c9cb;
+$secondary-color-purple__-2: #cb7185;
+$secondary-color-purple__0: #97667b;
+$secondary-color-purple__1: #504050;
 
-/*Tertiary color: sea green*/
-$color-dark-sea-green: #174B5B;
-$color-green: #47A48B;
-$color-light-green: #6ECCA5;
+/*Fourth Color : YELLOW & RED */
+$tertiary-color-yellow: #ffefd6;
+$tertiary-color-red: #d24a30;
 
-/*Fourth Color : Yellow */
-$color-light-yellow: #ffefd6;
 
-/*fonts*/
+/*Fonts: LATO & ROBOTO*/
 $font-roboto-default: "Roboto", sans-serif;
 $font-lato-default: "Lato", sans-serif;
 
