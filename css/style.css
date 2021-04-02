@@ -69,8 +69,7 @@ body {
 .header {
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(151, 102, 123, .4), rgba(230, 133, 114, 0.5),
-    rgba(230, 133, 114, .8)), url("../img/nat-34-b.jpg");
+    background-image: linear-gradient(to right bottom, rgba(230, 133, 114, 0.4),rgba(230, 133, 114,0.6), rgba(160, 109, 130,0.8)), url("../img/nat-34-b.jpg");
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
