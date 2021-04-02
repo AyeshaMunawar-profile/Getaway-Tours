@@ -33,33 +33,6 @@ $tertiary-sea-green: #174B5B;
 $font-roboto-default: "Roboto", sans-serif;
 $font-lato-default: "Lato", sans-serif;
 
-:root {
-  /*Neutral Colors */
-  --White: #fff9f0;
-  --Black: #221b22;
-  --Grey: #4d454d;
-
-  /*Primary Color : ORANGE*/
-  --Dark-Orange: #e68572;
-  --Light-Orange: #f9aa89;
-
-  /*Secondary color: Purple */
-  --Light-purple: #f3c9cb;
-  --Dark-purple: #97667b;
-  --Darkest-Purple: #504050;
-
-  /*Tertiary color: sea green*/
-  --Dark-sea-green: #174B5B;
-  --Green: #47A48B;
-  --Light-green: #6ECCA5;
-
-  /*Fourth Color : Yellow */
-  --Light-yellow: #ffefd6;
-  /*fonts*/
-  --Roboto-default: "Roboto", sans-serif;
-  --Lato-default: "Lato", sans-serif;
-}
-
 /* Basic reset of the html page
    universal selector
    box-sizing: border-box : no extra padding or margin added to the element
@@ -104,8 +77,8 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(151, 102, 123, .4), rgba(230, 133, 114, 0.5),
-          rgba(230, 133, 114, .8)), url("../img/nat-34-b.jpg");
+  background-image: linear-gradient(to right bottom, rgba($primary-color-orange__-1, .2), rgba($primary-color-orange__0, 0.4),
+          rgba($secondary-color-purple__0, .7), rgba($secondary-color-purple__1, .8)), url("../img/nat-34-b.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -142,7 +115,7 @@ body {
   width: auto;
 }
 .heading-primary {
-  color: var(--White);
+  color: $neutral-color-white;
   text-transform: uppercase;
   /*correct the shaky animation*/
   backface-visibility: hidden;
@@ -187,12 +160,12 @@ body {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 1rem 2rem rgba(34, 27, 34, .3);
+  box-shadow: 0 1rem 2rem rgba($neutral-color-grey, .2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(34, 27, 34, .25);
+  box-shadow: 0 .5rem 1rem rgba($neutral-color-grey, .25);
 }
 
 .btn::after {
@@ -214,13 +187,13 @@ body {
 }
 
 .btn--white {
-  background-color: var(--White);
-  color: var(--Grey);
+  background-color: $neutral-color-white;
+  color: $neutral-color-grey;
   padding: 1.5rem 4rem;
 }
 
 .btn--white::after {
-  background-color: var(--White);
+  background-color: $neutral-color-white;
 }
 
 .btn--animated {
