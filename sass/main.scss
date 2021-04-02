@@ -1,0 +1,245 @@
+:root {
+  /*Neutral Colors */
+  --White: #fff9f0;
+  --Black: #221b22;
+  --Grey: #4d454d;
+
+  /*Primary Color : ORANGE*/
+  --Dark-Orange: #e68572;
+  --Light-Orange: #f9aa89;
+
+  /*Secondary color: Purple */
+  --Light-purple: #f3c9cb;
+  --Dark-purple: #97667b;
+  --Darkest-Purple: #504050;
+
+  /*Tertiary color: sea green*/
+  --Dark-sea-green: #174B5B;
+  --Green: #47A48B;
+  --Light-green: #6ECCA5;
+
+  /*Fourth Color : Yellow */
+  --Light-yellow: #ffefd6;
+  /*fonts*/
+  --Roboto-default: "Roboto", sans-serif;
+  --Lato-default: "Lato", sans-serif;
+}
+
+/* Basic reset of the html page
+   universal selector
+   box-sizing: border-box : no extra padding or margin added to the element
+   except the height and width of the element */
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root{
+  /*1 rem is now = 10px to make the calculation based on rem easier for future */
+  /*But using px as a unit for defining the value of one rem takes away the power away from the user to override the
+   default font size i.e the value of 1 rem by changing font size of the browser */
+  /*takes the default font size 16px (10/16)*100 = 62.5 % so now our 1rem = 62.5 % of the browser's font size
+  which by default has a value of 16px this also allows the user to zoom in on the page i.e
+  increasing all the measurements of the page with zoom*/
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--Lato-default);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--Grey);
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.z-index--1{
+  z-index: -1;
+}
+.z-index-0{
+  z-index: 0;
+}
+.z-index-1{
+  z-index: 1;
+}
+.z-index-2{
+  z-index: 2;
+}
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(151, 102, 123, .4), rgba(230, 133, 114, 0.5),
+          rgba(230, 133, 114, .8)), url("../img/nat-34-b.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden;
+}
+.header__moving-clouds {
+  filter: sepia(100%);
+  opacity: .7;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 250.625em;
+  height: 43.75em;
+  -webkit-animation: cloudLoop 80s linear infinite;
+  animation: cloudLoop 80s linear infinite;
+}
+.header__text-box {
+  position: absolute;
+  top: 39%;
+  left: 48%;
+  transform: translate(-45%, -50%);
+  text-align: center;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 5rem;
+  width: auto;
+}
+.heading-primary {
+  color: var(--White);
+  text-transform: uppercase;
+  /*correct the shaky animation*/
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 1.9rem;
+  text-align: center;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  /*animation-iteration-count: 3;*/
+  /*animation-delay: 3s;*/
+
+}
+
+.heading-primary--sub {
+  font-size: 2.5rem;
+  font-weight: 400;
+  word-spacing: 1.6rem;
+  letter-spacing: .9rem;
+  display: block;
+  text-align: center;
+  animation: moveInRight 1s ease-in-out;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s ease-in-out;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(34, 27, 34, .3);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(34, 27, 34, .25);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s ease-in-out;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn--white {
+  background-color: var(--White);
+  color: var(--Grey);
+  padding: 1.5rem 4rem;
+}
+
+.btn--white::after {
+  background-color: var(--White);
+}
+
+.btn--animated {
+  animation: moveInFromBottom 1s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+/* Animations */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes cloudLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
