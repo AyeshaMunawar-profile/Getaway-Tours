@@ -17,50 +17,41 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-.z-index--1 {
-  z-index: -1; }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
-.z-index-0 {
-  z-index: 0; }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
-.z-index-1 {
-  z-index: 1; }
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
 
-.z-index-2 {
-  z-index: 2; }
-
-.header {
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.8)), url("../img/nat-34-b.jpg");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  overflow: hidden; }
-  .header__text-box {
-    position: absolute;
-    top: 39%;
-    left: 48%;
-    transform: translate(-45%, -50%);
-    text-align: center; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-    .header__logo-box__logo {
-      height: 5rem;
-      width: auto; }
-  .header__moving-clouds {
-    filter: sepia(100%);
-    opacity: .6;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    width: 250.625em;
-    height: 43.75em;
-    -webkit-animation: cloudLoop 80s linear infinite;
-    animation: cloudLoop 80s linear infinite; }
+@keyframes cloudLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); } }
 
 .heading-primary {
   color: #fffbf7;
@@ -128,38 +119,47 @@ body {
   animation: moveInFromBottom 1s ease-out .75s;
   animation-fill-mode: backwards; }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem); } }
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.8)), url("../img/nat-34-b.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden; }
+  .header__text-box {
+    position: absolute;
+    top: 39%;
+    left: 48%;
+    transform: translate(-45%, -50%);
+    text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+    .header__logo-box__logo {
+      height: 5rem;
+      width: auto; }
+  .header__moving-clouds {
+    filter: sepia(100%);
+    opacity: .6;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 250.625em;
+    height: 43.75em;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 80s linear infinite; }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem); } }
+.z-index--1 {
+  z-index: -1; }
 
-@keyframes moveInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(4rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem); } }
+.z-index-0 {
+  z-index: 0; }
 
-@keyframes cloudLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0); } }
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
