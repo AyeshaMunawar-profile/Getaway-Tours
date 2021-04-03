@@ -28,7 +28,6 @@ $tertiary-color-yellow: #ffefd6;
 $tertiary-color-red: #d24a30;
 $tertiary-sea-green: #174B5B;
 
-
 //Fonts: LATO & ROBOTO*/
 $font-roboto-default: "Roboto", sans-serif;
 $font-lato-default: "Lato", sans-serif;
@@ -90,39 +89,40 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   overflow: hidden;
+
+  &__text-box {
+    position: absolute;
+    top: 39%;
+    left: 48%;
+    transform: translate(-45%, -50%);
+    text-align: center;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    &__logo {
+      height: 5rem;
+      width: auto;
+    }
+  }
+
+  &__moving-clouds {
+    filter: sepia(100%);
+    opacity: .6;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 250.625em;
+    height: 43.75em;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 80s linear infinite;
+  }
 }
 
-.header__moving-clouds {
-  filter: sepia(100%);
-  opacity: .6;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 250.625em;
-  height: 43.75em;
-  -webkit-animation: cloudLoop 80s linear infinite;
-  animation: cloudLoop 80s linear infinite;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 39%;
-  left: 48%;
-  transform: translate(-45%, -50%);
-  text-align: center;
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 5rem;
-  width: auto;
-}
 
 .heading-primary {
   color: $neutral-color-white;
@@ -130,85 +130,87 @@ body {
   //correct the shaky animation
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 1.9rem;
+    text-align: center;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    //animation-iteration-count: 3;
+    //animation-delay: 3s;
+
+  }
+
+  &--sub {
+    font-size: 2.5rem;
+    font-weight: 400;
+    word-spacing: 1.6rem;
+    letter-spacing: .9rem;
+    display: block;
+    text-align: center;
+    animation: moveInRight 1s ease-in-out;
+  }
 }
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 300;
-  letter-spacing: 1.9rem;
-  text-align: center;
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s ease-in-out;
+    position: relative;
+    font-size: 1.6rem;
+  }
 
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  //animation-iteration-count: 3;
-  //animation-delay: 3s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba($neutral-color-grey, .2);
 
-}
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-.heading-primary--sub {
-  font-size: 2.5rem;
-  font-weight: 400;
-  word-spacing: 1.6rem;
-  letter-spacing: .9rem;
-  display: block;
-  text-align: center;
-  animation: moveInRight 1s ease-in-out;
-}
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($neutral-color-grey, .25);
+  }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s ease-in-out;
-  position: relative;
-  font-size: 1.6rem;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+  }
 
-.btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 1rem 2rem rgba($neutral-color-grey, .2);
-}
+  &--white {
+    background-color: $neutral-color-white;
+    color: $neutral-color-grey;
+    padding: 1.5rem 4rem;
 
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba($neutral-color-grey, .25);
-}
+    &::after {
+      background-color: $neutral-color-white;
+    }
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s ease-in-out;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--white {
-  background-color: $neutral-color-white;
-  color: $neutral-color-grey;
-  padding: 1.5rem 4rem;
-}
-
-.btn--white::after {
-  background-color: $neutral-color-white;
-}
-
-.btn--animated {
-  animation: moveInFromBottom 1s ease-out .75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveInFromBottom 1s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
 }
 
 // Animations
