@@ -1,3 +1,4 @@
+@import "../abstract/variables";
 .heading-primary {
   color: $neutral-color-white;
   text-transform: uppercase;
@@ -29,4 +30,13 @@
     text-align: center;
     animation: moveInRight 1s ease-in-out;
   }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $neutral-color-grey;
+  padding: 3rem;
 }
