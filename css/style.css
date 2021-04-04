@@ -11,21 +11,6 @@
 body {
   box-sizing: border-box; }
 
-.z-index--2 {
-  z-index: -2; }
-
-.z-index--1 {
-  z-index: -1; }
-
-.z-index-0 {
-  z-index: 0; }
-
-.z-index-1 {
-  z-index: 1; }
-
-.z-index-2 {
-  z-index: 2; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -86,12 +71,19 @@ body {
     animation: moveInRight 1s ease-in-out; }
 
 .heading-secondary {
+  display: inline-block;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
   letter-spacing: 0.5rem;
-  word-spacing: 0.5rem; }
+  word-spacing: 0.5rem;
+  background-image: linear-gradient(to right, #e06d56, #504050);
+  -webkit-background-clip: text;
+  color: transparent; }
+  .heading-secondary:hover {
+    transition: all 1s ease-in-out;
+    transform: skewY(1.5deg) skewX(12deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(34, 27, 34, 0.4); }
 
 body {
   font-family: "Lato", sans-serif;
@@ -100,6 +92,27 @@ body {
   line-height: 1.7;
   color: #4d4546;
   padding: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
+.z-index--2 {
+  z-index: -2; }
+
+.z-index--1 {
+  z-index: -1; }
+
+.z-index-0 {
+  z-index: 0; }
+
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -152,7 +165,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.8)), url("../img/nat-34-b.jpg");
+  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.9)), url("../img/nat-34-b.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -184,7 +197,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #f3f1e8;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -193,7 +205,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: #7ceebf;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
