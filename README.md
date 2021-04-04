@@ -48,3 +48,12 @@ section.
 1) Understand basics of SASS. I used scss instead of sass for because its cleaner and allows unit mixing for calculations 
 2) Used Mixins, Functions , Extends , Nested sass , variables , control directives like for loop and conditonals in sass 
 3) Created my own grid system in sass for 1 -4 columns for this project and for future use 
+
+**Section 4: Building about section**
+1) Thinking about components 
+2) How and why to use utility classes
+3) How to use background-clip property
+4) How to transform multiple properties simultaneously 
+5) How to use outline-offset property together with outline 
+6) How to style elements that are not hovered while other are 
+
