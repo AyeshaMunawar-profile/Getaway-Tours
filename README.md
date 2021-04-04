@@ -44,4 +44,7 @@ section.
         vi)   Theme: The different themes of the projecct
         vii)  Vendors: The 3rd - party sass/css files
 
-
+**Section 3: Using SASS for advance features**
+1) Understand basics of SASS. I used scss instead of sass for because its cleaner and allows unit mixing for calculations 
+2) Used Mixins, Functions , Extends , Nested sass , variables , control directives like for loop and conditonals in sass 
+3) Created my own grid system in sass for 1 -4 columns for this project and for future use 
