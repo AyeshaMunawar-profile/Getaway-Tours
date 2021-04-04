@@ -25,7 +25,7 @@
   &--sub {
     font-size: 2.5rem;
     font-weight: 400;
-    word-spacing: 1.6rem;
+    word-spacing: $default-font-size;
     letter-spacing: .9rem;
     display: block;
     text-align: center;
@@ -46,20 +46,31 @@
 
   &:hover {
     transition: all 1s ease-in-out;
-    transform: skewY(1.5deg) skewX(12deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($neutral-color-black,0.4);
+    transform: skewY(-1.5deg) skewX(-12deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($neutral-color-black, 0.4);
   }
 }
 
-.heading-tertiary{
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: $default-font-size;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   line-height: 1.7;
-  color: $neutral-color-grey;
+  color: $neutral-color-grey__0;
   padding: 3rem;
 }
