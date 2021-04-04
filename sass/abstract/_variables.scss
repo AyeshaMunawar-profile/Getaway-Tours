@@ -4,10 +4,13 @@
 //30% PURPLE
 //SEA GREEN & OFF WHITE
 $neutral-color-white: #fffbf7;
+$neutral-color-black: #333333;
 $neutral-color-off-white__-1: #f7f7f7;
 $neutral-color-off-white__0: #f3f1e8;
-$neutral-color-black: #221b22;
-$neutral-color-grey: #4d4546;
+$neutral-color-grey__-2: #d9d9d9;
+$neutral-color-grey__-1: #BBBBBB;
+$neutral-color-grey__0: #7a7a7a;
+$neutral-color-grey__1: #4d4546;
 
 //Primary Color : ORANGE & GREEN
 $primary-color-orange__1: #e06d56;
@@ -34,3 +37,6 @@ $tertiary-sea-green: #174B5B;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+//Font size
+$default-font-size: 1.6rem;

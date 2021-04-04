@@ -82,22 +82,39 @@ body {
   color: transparent; }
   .heading-secondary:hover {
     transition: all 1s ease-in-out;
-    transform: skewY(1.5deg) skewX(12deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(34, 27, 34, 0.4); }
+    transform: skewY(-1.5deg) skewX(-12deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(51, 51, 51, 0.4); }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #4d4546;
+  color: #7a7a7a;
   padding: 3rem; }
 
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .z-index--2 {
   z-index: -2; }
@@ -162,10 +179,29 @@ body {
   animation: moveInFromBottom 1s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px;
+  border-bottom: 1px solid #47a48b;
+  color: #47a48b;
+  transition: all 0.2s ease-in-out; }
+
+.btn-text:hover {
+  background-color: #47a48b;
+  color: #fffbf7;
+  box-shadow: 0 1rem 2rem rgba(122, 122, 122, 0.4);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(122, 122, 122, 0.3);
+  transform: translateY(0px); }
+
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.9)), url("../img/nat-34-b.jpg");
+  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.6), rgba(151, 102, 123, 0.4), rgba(80, 64, 80, 0.3)), url("../img/nat-34-b.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
