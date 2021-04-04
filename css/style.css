@@ -9,13 +9,22 @@
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #4d4546;
-  padding: 3rem;
   box-sizing: border-box; }
+
+.z-index--2 {
+  z-index: -2; }
+
+.z-index--1 {
+  z-index: -1; }
+
+.z-index-0 {
+  z-index: 0; }
+
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
 
 @keyframes moveInLeft {
   0% {
@@ -76,6 +85,14 @@ body {
     text-align: center;
     animation: moveInRight 1s ease-in-out; }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #4d4546;
+  padding: 3rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -87,14 +104,14 @@ body {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 1rem 2rem rgba(77, 69, 70, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(77, 69, 70, 0.9); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(77, 69, 70, 0.25); }
+  box-shadow: 0 0.5rem 1rem rgba(77, 69, 70, 0.8); }
 
 .btn::after {
   content: "";
@@ -152,14 +169,32 @@ body {
     -webkit-animation: cloudLoop 80s linear infinite;
     animation: cloudLoop 80s linear infinite; }
 
-.z-index--1 {
-  z-index: -1; }
-
-.z-index-0 {
-  z-index: 0; }
-
-.z-index-1 {
-  z-index: 1; }
-
-.z-index-2 {
-  z-index: 2; }
+.row {
+  max-width: 114rem;
+  background-color: #f3f1e8;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: #7ceebf;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-1, .row .col-2-of-2, .row .col-3-of-3, .row .col-4-of-4 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (6rem * 2)) / 3); }
+  .row .col-2-of-3 {
+    width: calc((((100% - ( 6rem * 2)) / 3) * 2 ) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - (6rem * 3)) / 4); }
+  .row .col-2-of-4 {
+    width: calc((((100% - ( 6rem * 3)) / 4) * 2 ) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc((((100% - ( 6rem * 3)) / 4) * 3 ) + (6rem * 2)); }
