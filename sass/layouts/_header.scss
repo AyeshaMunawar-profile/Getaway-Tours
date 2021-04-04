@@ -5,7 +5,7 @@
           rgba($secondary-color-purple__0, .7), rgba($secondary-color-purple__1, .8)), url("../img/nat-34-b.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   overflow: hidden;
 
   &__text-box {

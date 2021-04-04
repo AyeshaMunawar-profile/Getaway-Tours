@@ -85,6 +85,14 @@ body {
     text-align: center;
     animation: moveInRight 1s ease-in-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -92,6 +100,11 @@ body {
   line-height: 1.7;
   color: #4d4546;
   padding: 3rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -25vh; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -142,7 +155,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.5), rgba(151, 102, 123, 0.7), rgba(80, 64, 80, 0.8)), url("../img/nat-34-b.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   overflow: hidden; }
   .header__text-box {
     position: absolute;
