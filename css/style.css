@@ -183,7 +183,7 @@ body {
   font-size: 1.6rem;
   display: inline-block;
   text-decoration: none;
-  padding: 4px;
+  padding: 4px 6px;
   border-bottom: 1px solid #47a48b;
   color: #47a48b;
   transition: all 0.2s ease-in-out; }
@@ -197,6 +197,24 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(122, 122, 122, 0.3);
   transform: translateY(0px); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 1.5rem 4rem rgba(122, 122, 122, 0.5);
+    border-radius: 2px;
+    position: absolute; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      left: 53%;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 17%;
+      top: 15rem; }
 
 .header {
   position: relative;
