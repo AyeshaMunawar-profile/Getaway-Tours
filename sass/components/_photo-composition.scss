@@ -9,6 +9,7 @@
     position: absolute;
     transition: all 0.2s ease-in-out;
     z-index: 10;
+    //outline-offset: 2rem;
 
     &--p1 {
       left: 0;
@@ -17,7 +18,7 @@
 
     &--p2 {
       left: 53%;
-      top: 2rem;
+      top: 3rem;
     }
 
     &--p3 {
@@ -26,15 +27,21 @@
     }
 
     &:hover {
-      //outline: 1.5rem solid $primary-color-orange__0;
+      //add border with gradient to the image which is being hovered
+      //outline offset on the main element for space between outline and the block
+      //outline: 1.5rem solid $primary-color-purple__1;
       padding: 1.5rem;
       border: 1rem solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to left bottom, rgba($primary-color-orange__0,1), rgba($primary-color-purple__0,1));
+      border-image-source: linear-gradient(to right top, rgba($secondary-color-green__1,1), rgba($secondary-color-green__-1,1));
 
-      transform: scale(1.05);
+      transform: scale(1.1);
       box-shadow: 0 1.7rem 4rem rgba($neutral-color-grey__0, 0.6);
       z-index: 20;
     }
+  }
+
+  &:hover &__photo:not(:hover){
+    transform: scale(0.98);
   }
 }
