@@ -62,13 +62,13 @@
     display: inline-block;
     text-decoration: none;
     padding: 4px 6px;
-    border-bottom: 1px solid $secondary-color-green__0;
-    color: $secondary-color-green__0;
+    border-bottom: 1px solid $secondary-color__1;
+    color: $secondary-color__1;
     transition: all 0.2s ease-in-out;
   }
 
   &:hover {
-    background-color: $secondary-color-green__0;
+    background-color: $secondary-color__1;
     color: $neutral-color-white;
     box-shadow: 0 1rem 2rem rgba($neutral-color-grey__0,0.4);
     transform: translateY(-2px);

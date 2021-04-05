@@ -1,11 +1,12 @@
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(
-                  $primary-color-orange__-1, .3),
-          rgba($primary-color-orange__0, 0.6),
-          rgba($primary-color-purple__0, 0.4),
-          rgba($primary-color-purple__1, .3)), url("../img/nat-34-b.jpg");
+  background-image: linear-gradient(to left bottom,rgba(
+                  $tertiary-color__yellow, .4), rgba(
+                  $primary-color__-1, .5),
+          rgba($primary-color__0, 0.6),
+          rgba($primary-color__1, 0.6),
+          rgba($primary-color__2, 0.7)), url("../img/nat-12.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -32,7 +33,7 @@
 
   &__moving-clouds {
     filter: sepia(100%);
-    opacity: .6;
+    opacity: .7;
     position: absolute;
     z-index: 1;
     bottom: 0;
