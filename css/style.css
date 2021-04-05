@@ -77,13 +77,13 @@ body {
   font-weight: 700;
   letter-spacing: 0.5rem;
   word-spacing: 0.5rem;
-  background-image: linear-gradient(to right, #e06d56, #504050);
+  background-image: linear-gradient(to right bottom, #6eaf1f, #2e631b);
   -webkit-background-clip: text;
   color: transparent; }
   .heading-secondary:hover {
     transition: all 1s ease-in-out;
     transform: skewY(-1.5deg) skewX(-12deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(51, 51, 51, 0.4); }
+    text-shadow: 0.5rem 1rem 2rem rgba(18, 28, 4, 0.4); }
 
 .heading-tertiary {
   font-size: 1.8rem;
@@ -136,6 +136,13 @@ body {
   padding: 30rem 0;
   margin-top: -25vh; }
 
+.section-features {
+  padding: 30rem 0;
+  background-image: linear-gradient(to right bottom, rgba(231, 246, 83, 0.7), rgba(177, 216, 35, 0.75), rgba(110, 175, 31, 0.75), rgba(80, 129, 4, 0.75), rgba(46, 99, 27, 0.8)), url("../img/nat-1-large - small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -184,12 +191,12 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 4px 6px;
-  border-bottom: 1px solid #47a48b;
-  color: #47a48b;
+  border-bottom: 1px solid #db8200;
+  color: #db8200;
   transition: all 0.2s ease-in-out; }
 
 .btn-text:hover {
-  background-color: #47a48b;
+  background-color: #db8200;
   color: #fffbf7;
   box-shadow: 0 1rem 2rem rgba(122, 122, 122, 0.4);
   transform: translateY(-2px); }
@@ -221,7 +228,7 @@ body {
       padding: 1.5rem;
       border: 1rem solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to right top, #2f7e6c, #6ecca5);
+      border-image-source: linear-gradient(to right top, #b1d823, #6eaf1f);
       transform: scale(1.2);
       box-shadow: 0 1.7rem 4rem rgba(122, 122, 122, 0.6);
       z-index: 20; }
@@ -231,7 +238,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(249, 170, 137, 0.3), rgba(230, 133, 114, 0.6), rgba(151, 102, 123, 0.4), rgba(80, 64, 80, 0.3)), url("../img/nat-34-b.jpg");
+  background-image: linear-gradient(to left bottom, rgba(231, 246, 83, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.6), rgba(46, 99, 27, 0.7)), url("../img/nat-12.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -251,7 +258,7 @@ body {
       width: auto; }
   .header__moving-clouds {
     filter: sepia(100%);
-    opacity: .6;
+    opacity: .7;
     position: absolute;
     z-index: 1;
     bottom: 0;
