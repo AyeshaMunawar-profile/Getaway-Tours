@@ -35,13 +35,14 @@
       border-image-slice: 1;
       border-image-source: linear-gradient(to right top, rgba($secondary-color-green__1,1), rgba($secondary-color-green__-1,1));
 
-      transform: scale(1.1);
+      transform: scale(1.2);
       box-shadow: 0 1.7rem 4rem rgba($neutral-color-grey__0, 0.6);
       z-index: 20;
     }
   }
 
   &:hover &__photo:not(:hover){
-    transform: scale(0.98);
+    transform: scale(0.95) translateY(-5px);
+
   }
 }
