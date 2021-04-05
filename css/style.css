@@ -205,7 +205,9 @@ body {
     height: auto;
     box-shadow: 0 1.5rem 4rem rgba(122, 122, 122, 0.5);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    z-index: 10; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -215,6 +217,14 @@ body {
     .composition__photo--p3 {
       left: 17%;
       top: 15rem; }
+    .composition__photo:hover {
+      padding: 1.5rem;
+      border: 1rem solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left bottom, #e68572, #97667b);
+      transform: scale(1.05);
+      box-shadow: 0 1.7rem 4rem rgba(122, 122, 122, 0.6);
+      z-index: 20; }
 
 .header {
   position: relative;
