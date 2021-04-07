@@ -238,7 +238,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to left bottom, rgba(231, 246, 83, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.6), rgba(46, 99, 27, 0.7)), url("../img/nat-12.jpg");
+  background-image: linear-gradient(to left bottom, rgba(231, 246, 83, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.75)), url("../img/nat-12.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -258,7 +258,7 @@ body {
       width: auto; }
   .header__moving-clouds {
     filter: sepia(100%);
-    opacity: .7;
+    opacity: .8;
     position: absolute;
     z-index: 1;
     bottom: 0;
