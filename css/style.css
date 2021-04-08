@@ -235,6 +235,20 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95) translateY(-5px); }
 
+.feature-box {
+  background-color: #f7f7f7;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 1.5rem 4rem rgba(77, 69, 70, 0.6); }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right bottom, #6eaf1f, #2e631b);
+    -webkit-background-clip: text;
+    color: transparent; }
+
 .header {
   position: relative;
   height: 95vh;
