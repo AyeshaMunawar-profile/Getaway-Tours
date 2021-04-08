@@ -1,6 +1,5 @@
 .row {
   display: flex;
-  align-items: stretch;
   max-width: $grid-width;
   margin: 0 auto;
   //not() does the opposite of selecting the last child
