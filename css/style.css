@@ -131,6 +131,15 @@ body {
 .z-index-2 {
   z-index: 2; }
 
+.d-flex {
+  display: flex; }
+
+.d-justify-center {
+  justify-content: center; }
+
+.d-align-items-stretch {
+  align-items: stretch; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 30rem 0;
@@ -288,7 +297,6 @@ body {
 
 .row {
   display: flex;
-  align-items: stretch;
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
