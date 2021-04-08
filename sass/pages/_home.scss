@@ -13,4 +13,9 @@
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -12rem;
+  & > * {
+    transform: skewY(7deg);
+  }
 }
