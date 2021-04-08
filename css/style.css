@@ -241,7 +241,11 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 1.5rem 4rem rgba(77, 69, 70, 0.6); }
+  box-shadow: 0px 1.5rem 4rem rgba(77, 69, 70, 0.6);
+  height: 100%; }
+  .feature-box:hover {
+    transform: translateY(-2px) scale(1.01);
+    transition: all 0.3s ease-in-out; }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -283,6 +287,8 @@ body {
     animation: cloudLoop 80s linear infinite; }
 
 .row {
+  display: flex;
+  align-items: stretch;
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
