@@ -147,7 +147,7 @@ body {
 
 .section-features {
   padding: 30rem 0;
-  background-image: linear-gradient(to right bottom, rgba(231, 246, 83, 0.7), rgba(177, 216, 35, 0.75), rgba(110, 175, 31, 0.75), rgba(80, 129, 4, 0.75), rgba(46, 99, 27, 0.8)), url("../img/nat-1-large - small.jpg");
+  background-image: linear-gradient(to right bottom, rgba(231, 246, 83, 0.7), rgba(177, 216, 35, 0.75), rgba(110, 175, 31, 0.7), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.6)), url("../img/nat-11.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
