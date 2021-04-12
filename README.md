@@ -98,3 +98,10 @@ skills related to javascript while developing each section of the project.
 1) How to include and use icon font
 2) Another way of creating "skewed section" design
 3) How and when to use direct child selector 
+
+**Section 5 : Building Tours Section** 
+1) How to add rotating cards effect
+2) How to use perspective in css
+3) How to use the backface visibility property
+4) Using background blend modes
+5) How and when to use box-decoration-break
