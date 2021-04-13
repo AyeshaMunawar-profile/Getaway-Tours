@@ -172,14 +172,14 @@ body {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 1rem 2rem rgba(77, 69, 70, 0.9); }
+  box-shadow: 0 1rem 2rem rgba(75, 75, 75, 0.9); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(77, 69, 70, 0.8); }
+  box-shadow: 0 0.5rem 1rem rgba(75, 75, 75, 0.8); }
 
 .btn::after {
   content: "";
@@ -195,7 +195,7 @@ body {
 
 .btn--white {
   background-color: #fffbf7;
-  color: #4d4546;
+  color: #4b4b4b;
   padding: 1.5rem 4rem; }
   .btn--white::after {
     background-color: #fffbf7; }
@@ -209,12 +209,13 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 4px 6px;
-  border-bottom: 1px solid #db8200;
-  color: #db8200;
+  border-bottom: 1px solid #b64201;
+  color: #b64201;
   transition: all 0.2s ease-in-out; }
 
 .btn-text:hover {
-  background-color: #db8200;
+  background-color: #c92424;
+  border-bottom: 1px solid #c92424;
   color: #fffbf7;
   box-shadow: 0 1rem 2rem rgba(122, 122, 122, 0.4);
   transform: translateY(-2px); }
@@ -259,7 +260,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 1.5rem 4rem rgba(77, 69, 70, 0.6);
+  box-shadow: 0px 1.5rem 4rem rgba(75, 75, 75, 0.6);
   height: 100%; }
   .feature-box:hover {
     transform: translateY(-2px) scale(1.01);
