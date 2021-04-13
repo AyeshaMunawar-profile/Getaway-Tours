@@ -7,7 +7,7 @@
   height: 50rem;
 
   &__side {
-    color: $neutral-color-white;
+    color: $neutral-color-grey__1;
     font-size: 2rem;
     width: 100%;
     height: 50rem;
@@ -15,16 +15,40 @@
     backface-visibility: hidden;
     position: absolute;
     top: 0;
-
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba($neutral-color-grey__1, 0.2);
     &--front {
       background-color: $neutral-color-white;
+
+      &--1 {
+
+      }
+
+      &--2 {
+
+      }
+
+      &--3 {
+
+      }
     }
 
     &--back {
       //backside already rotated 180deg by default
-      background: linear-gradient(to right bottom, green, blue);
       transform: rotateY(180deg);
       z-index: -1;
+
+      &--1 {
+        background: linear-gradient(to right bottom, rgba($secondary-color__-2, 1), rgba($secondary-color__0, 1));
+      }
+
+      &--2 {
+        background: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1));
+      }
+
+      &--3 {
+        background: linear-gradient(to right bottom, rgba($tertiary-color__red__-2, 1), rgba($tertiary-color__red__0, 1));
+      }
     }
   }
 
