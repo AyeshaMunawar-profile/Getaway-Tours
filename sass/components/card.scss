@@ -125,22 +125,18 @@
    }
 
   &__details {
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 400;
-    padding: 3rem 4rem;
+    padding: 3rem;
 
-    &-list:last-child{
-      border-bottom: none;
+    &-list li:not(:last-child){
+      border-bottom: 1px solid rgba($neutral-color-grey__-1,0.3);
     }
   }
 
   &__detail {
     list-style: none;
-    border-bottom: 1px solid rgba($neutral-color-grey__-1,0.3);
     text-align: center;
     padding: 1rem;
-
-
-
   }
 }
