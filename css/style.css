@@ -272,11 +272,14 @@ body {
     color: transparent; }
 
 .card {
-  background: linear-gradient(to right bottom, red, orange);
-  width: 100%;
-  height: 50rem;
-  transition: all 1s ease-in-out; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background: linear-gradient(to right bottom, red, orange);
+    width: 100%;
+    height: 50rem;
+    transition: all 1s ease-in-out; }
+  .card:hover .card__side {
     transform: rotateY(180deg); }
 
 .header {
