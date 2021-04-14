@@ -329,7 +329,7 @@ body {
       background-blend-mode: hard-light; }
   .card__heading {
     color: #fffbf7;
-    font-size: 1.4em;
+    font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
     position: absolute;
@@ -347,9 +347,11 @@ body {
     .card__heading-span--3 {
       background: linear-gradient(to right bottom, rgba(252, 106, 106, 0.8), rgba(182, 66, 1, 0.8)); }
   .card__details {
-    font-size: 0.85em;
+    font-size: 1.7rem;
     font-weight: 400;
-    padding: 3rem; }
+    width: 75%;
+    padding: 4rem 1rem;
+    margin: 0 auto; }
     .card__details-list li:not(:last-child) {
       border-bottom: 1px solid rgba(187, 187, 187, 0.3); }
   .card__detail {
