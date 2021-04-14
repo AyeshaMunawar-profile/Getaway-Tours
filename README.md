@@ -110,5 +110,5 @@ skills related to javascript while developing each section of the project.
 1) How to make text flow around shapes with shape-outside and float 
 2) How to apply filter to images
 3) How to create a background video covering an entire section
-4) How to use the <video> HMTL element 
+4) How to use the `<video>` HMTL element 
 5) How and when to use object-fit property
