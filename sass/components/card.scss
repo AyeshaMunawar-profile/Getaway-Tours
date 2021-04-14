@@ -30,7 +30,7 @@
       z-index: -1;
 
       &--1 {
-        background: linear-gradient(to right bottom, rgba($secondary-color__-2, 1), rgba($secondary-color__0, 1));
+        background: linear-gradient(to right bottom, rgba($secondary-color__-1, 0.9), rgba($secondary-color__1, 1));
       }
 
       &--2 {
@@ -60,7 +60,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, 1), rgba($secondary-color__0, 1)), url("../img/nat-1-large - small.jpg");
+      background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1-large.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -95,22 +95,24 @@
     text-align: right;
     width: 75%;
   }
+
   //its not an element block or modifier that's why its placed separately here
-   &__heading-span{
-     padding: 1rem 1.5rem;
-     -webkit-box-decoration-break: clone;
-     &--1 {
-       background: linear-gradient(to right bottom, rgba($secondary-color__-1, 0.8), rgba($secondary-color__1, 0.8));
-     }
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
 
-     &--2 {
-       background: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 0.8), rgba($tertiary-color__torquise__1, 0.8));
-     }
+    &--1 {
+      background: linear-gradient(to right bottom, rgba($secondary-color__-1, 0.8), rgba($secondary-color__1, 0.8));
+    }
 
-     &--3 {
-       background: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 0.8), rgba($tertiary-color__red__0, 0.8));
-     }
-   }
+    &--2 {
+      background: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 0.8), rgba($tertiary-color__torquise__1, 0.8));
+    }
+
+    &--3 {
+      background: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 0.8), rgba($tertiary-color__red__0, 0.8));
+    }
+  }
 
   &__details {
     font-size: 1.7rem;
@@ -118,8 +120,9 @@
     width: 75%;
     padding: 4rem 1rem;
     margin: 0 auto;
-    &-list li:not(:last-child){
-      border-bottom: 1px solid rgba($neutral-color-grey__-1,0.3);
+
+    &-list li:not(:last-child) {
+      border-bottom: 1px solid rgba($neutral-color-grey__-1, 0.3);
     }
   }
 
@@ -127,5 +130,29 @@
     list-style: none;
     text-align: center;
     padding: 1rem;
+  }
+
+  &__cta {
+    color: $neutral-color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-transform: uppercase;
+    margin-bottom: 17rem;
+  }
+
+  &__price-only {
+    font-size: 1.6rem;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
