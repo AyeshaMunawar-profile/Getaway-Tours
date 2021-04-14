@@ -49,6 +49,16 @@
     }
   }
 
+  &--green {
+    background-color: $primary-color__1;
+    color: $neutral-color-white;
+    padding: 1.5rem 4rem;
+
+    &::after {
+      background-color: $primary-color__1;
+    }
+  }
+
   &--animated {
     animation: moveInFromBottom 1s ease-out .75s;
     animation-fill-mode: backwards;

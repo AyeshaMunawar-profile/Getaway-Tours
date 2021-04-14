@@ -116,6 +116,15 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .z-index--2 {
   z-index: -2; }
 
@@ -158,7 +167,7 @@ body {
 
 .section-tours {
   background-color: #f5f3f0;
-  padding: 35rem 0 50rem 0;
+  padding: 35rem 0 15rem 0;
   margin-top: -15rem; }
 
 .btn:link, .btn:visited {
@@ -199,6 +208,13 @@ body {
   padding: 1.5rem 4rem; }
   .btn--white::after {
     background-color: #fffbf7; }
+
+.btn--green {
+  background-color: #508104;
+  color: #fffbf7;
+  padding: 1.5rem 4rem; }
+  .btn--green::after {
+    background-color: #508104; }
 
 .btn--animated {
   animation: moveInFromBottom 1s ease-out .75s;
@@ -247,7 +263,7 @@ body {
       padding: 1.5rem;
       border: 1rem solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to right top, #b1d823, #6eaf1f);
+      border-image-source: linear-gradient(to right top, #b1d823, #508104);
       transform: scale(1.2);
       box-shadow: 0 1.7rem 4rem rgba(122, 122, 122, 0.6);
       z-index: 20; }
