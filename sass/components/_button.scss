@@ -12,7 +12,7 @@
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 1rem 2rem rgba($neutral-color-grey__1, .5);
+    box-shadow: 0 1rem 2rem rgba($neutral-color-grey__2, .5);
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -23,7 +23,7 @@
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba($neutral-color-grey__1, .6);
+    box-shadow: 0 .5rem 1rem rgba($neutral-color-grey__2, .6);
   }
 
   &::after {
@@ -41,7 +41,7 @@
 
   &--white {
     background-color: $neutral-color-white;
-    color: $neutral-color-grey__1;
+    color: $neutral-color-grey__2;
     padding: 1.5rem 4rem;
 
     &::after {

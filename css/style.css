@@ -176,6 +176,10 @@ body {
   padding: 35rem 0 15rem 0;
   margin-top: -15rem; }
 
+.section-stories {
+  padding: 25rem 0;
+  color: #5b5b5b; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -187,14 +191,14 @@ body {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 1rem 2rem rgba(75, 75, 75, 0.5); }
+  box-shadow: 0 1rem 2rem rgba(67, 67, 67, 0.5); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(75, 75, 75, 0.6); }
+  box-shadow: 0 0.5rem 1rem rgba(67, 67, 67, 0.6); }
 
 .btn::after {
   content: "";
@@ -210,7 +214,7 @@ body {
 
 .btn--white {
   background-color: #fffbf7;
-  color: #4b4b4b;
+  color: #434343;
   padding: 1.5rem 4rem; }
   .btn--white::after {
     background-color: #fffbf7; }
@@ -282,7 +286,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 1.5rem 4rem rgba(75, 75, 75, 0.6);
+  box-shadow: 0px 1.5rem 4rem rgba(67, 67, 67, 0.6);
   height: 100%; }
   .feature-box:hover {
     transform: translateY(-2px) scale(1.01);
@@ -310,7 +314,7 @@ body {
     top: 0;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(75, 75, 75, 0.2); }
+    box-shadow: 0 1.5rem 4rem rgba(67, 67, 67, 0.2); }
     .card__side--front {
       background-color: #fffbf7; }
     .card__side--back {
