@@ -22,18 +22,6 @@
 
     &--front {
       background-color: $neutral-color-white;
-
-      &--1 {
-
-      }
-
-      &--2 {
-
-      }
-
-      &--3 {
-
-      }
     }
 
     &--back {
@@ -98,7 +86,7 @@
 
   &__heading {
     color: $neutral-color-white;
-    font-size: 1.4em;
+    font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
     position: absolute;
@@ -125,10 +113,11 @@
    }
 
   &__details {
-    font-size: 0.85em;
+    font-size: 1.7rem;
     font-weight: 400;
-    padding: 3rem;
-
+    width: 75%;
+    padding: 4rem 1rem;
+    margin: 0 auto;
     &-list li:not(:last-child){
       border-bottom: 1px solid rgba($neutral-color-grey__-1,0.3);
     }
