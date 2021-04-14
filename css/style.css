@@ -107,6 +107,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 10rem; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
@@ -124,6 +127,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
 
 .z-index--2 {
   z-index: -2; }
