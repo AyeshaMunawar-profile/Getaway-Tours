@@ -273,7 +273,7 @@ body {
       padding: 1.5rem;
       border: 1rem solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to right top, #b1d823, #508104);
+      border-image-source: linear-gradient(to left top, #508104, #b1d823);
       transform: scale(1.2);
       box-shadow: 0 1.7rem 4rem rgba(122, 122, 122, 0.6);
       z-index: 20; }
