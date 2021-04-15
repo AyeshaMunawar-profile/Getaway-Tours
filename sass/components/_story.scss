@@ -1,24 +1,31 @@
-.story{
-  width: 75%;
+.story {
+  width: 80%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($neutral-color-grey__1,0.3);
+  box-shadow: 0 3rem 6rem rgba($neutral-color-grey__1, 0.3);
   background-color: white;
   border-radius: 3px;
   padding: 6rem;
+  padding-left: 9rem;
   font-size: $default-font-size;
+  transform: skewX(-12deg);
 
-  &__shape{
-    width: 15rem;
-    height: 15rem;
+  &__shape {
+    width: 20rem;
+    height: 20rem;
     float: left;
     background-color: #2e631b;
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem);
+    clip-path: circle(48% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
   }
-  &__picture{
+
+  &__picture {
     height: inherit;
     width: inherit;
+  }
+
+  &__text {
+    transform: skewX(12deg);
   }
 }
