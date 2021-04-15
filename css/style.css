@@ -155,6 +155,9 @@ body {
 .d-align-items-stretch {
   align-items: stretch; }
 
+.h-cursor-pointer:hover {
+  cursor: pointer; }
+
 .section-about {
   background-color: #f5f3f0;
   padding: 35rem 0;
