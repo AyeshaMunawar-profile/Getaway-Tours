@@ -48,7 +48,7 @@ body {
     transform: translate3d(-50%, 0, 0); } }
 
 .heading-primary {
-  color: #fffbf7;
+  color: #fdfcfb;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -159,7 +159,7 @@ body {
   cursor: pointer; }
 
 .section-about {
-  background-color: #f5f3f0;
+  background-color: #f7f7f7;
   padding: 35rem 0;
   margin-top: -25vh; }
 
@@ -175,12 +175,12 @@ body {
     transform: skewY(7deg); }
 
 .section-tours {
-  background-color: #f5f3f0;
+  background-color: #f7f7f7;
   padding: 35rem 0 15rem 0;
   margin-top: -15rem; }
 
 .section-stories {
-  padding: 25rem 0;
+  padding: 20rem 0;
   color: #5b5b5b; }
 
 .btn:link, .btn:visited {
@@ -216,15 +216,15 @@ body {
   transition: all .4s ease-in-out; }
 
 .btn--white {
-  background-color: #fffbf7;
+  background-color: #fdfcfb;
   color: #434343;
   padding: 1.5rem 4rem; }
   .btn--white::after {
-    background-color: #fffbf7; }
+    background-color: #fdfcfb; }
 
 .btn--green {
   background-color: #508104;
-  color: #fffbf7;
+  color: #fdfcfb;
   padding: 1.5rem 4rem; }
   .btn--green::after {
     background-color: #508104; }
@@ -245,7 +245,7 @@ body {
 .btn-text:hover {
   background-color: #c92424;
   border-bottom: 1px solid #c92424;
-  color: #fffbf7;
+  color: #fdfcfb;
   box-shadow: 0 1rem 2rem rgba(122, 122, 122, 0.4);
   transform: translateY(-2px); }
 
@@ -319,7 +319,7 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(67, 67, 67, 0.2); }
     .card__side--front {
-      background-color: #fffbf7; }
+      background-color: #fdfcfb; }
     .card__side--back {
       transform: rotateY(180deg);
       z-index: -1; }
@@ -357,7 +357,7 @@ body {
       background-position: center;
       background-blend-mode: hard-light; }
   .card__heading {
-    color: #fffbf7;
+    color: #fdfcfb;
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -388,7 +388,7 @@ body {
     text-align: center;
     padding: 1rem; }
   .card__cta {
-    color: #fffbf7;
+    color: #fdfcfb;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -403,6 +403,14 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(91, 91, 91, 0.3);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem; }
 
 .header {
   position: relative;
