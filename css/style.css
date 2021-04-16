@@ -131,6 +131,9 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.u-margin-bottom-medium-1 {
+  margin-bottom: -4rem; }
+
 .z-index--2 {
   z-index: -2; }
 
@@ -180,8 +183,10 @@ body {
   margin-top: -15rem; }
 
 .section-stories {
-  padding: 15rem 0;
-  color: #5b5b5b; }
+  padding: 8rem 0;
+  padding-bottom: 0;
+  color: #5b5b5b;
+  position: relative; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -452,6 +457,16 @@ body {
     width: auto;
     filter: blur(2px) brightness(80%);
     transform: scale(1); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    width: inherit; }
 
 .header {
   position: relative;
