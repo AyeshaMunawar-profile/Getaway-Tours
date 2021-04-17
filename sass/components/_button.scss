@@ -4,7 +4,7 @@
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    border-radius: $border-radius-100;
+    border-radius: $border-radius-large;
     transition: all .2s ease-in-out;
     position: relative;
     font-size: $default-font-size;
@@ -31,7 +31,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: $border-radius-100;
+    border-radius: $border-radius-large;
     position: absolute;
     top: 0;
     left: 0;

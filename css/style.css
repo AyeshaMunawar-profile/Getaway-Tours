@@ -491,6 +491,36 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  width: 100%;
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(253, 252, 251, 0.8);
+  border: none;
+  border-bottom: 3px solid transparent;
+  outline: none;
+  transition: all 0.5s ease-in-out; }
+  .form__input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #6eaf1f;
+    box-shadow: 0 1rem 2rem rgba(91, 91, 91, 0.5); }
+  .form__input:focus:invalid {
+    border: none;
+    border-bottom: 3px solid #e34500; }
+  .form__input::-webkit-input-placeholder {
+    color: #5b5b5b; }
+
+.form__label {
+  font-size: 1.8rem; }
+
 .header {
   position: relative;
   height: 95vh;
