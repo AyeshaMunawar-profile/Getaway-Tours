@@ -11,7 +11,7 @@
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
     border-radius: $border-radius-default;
-    background-color: rgba($neutral-color-white, 0.8);
+    background-color: rgba($neutral-color-white, 0.7);
     border: none;
     border-bottom: $border-thickness-default solid transparent;
     outline: none;
@@ -24,7 +24,7 @@
       box-shadow: 0 1rem 2rem rgba($neutral-color-grey__1, 0.5);
     }
 
-    &:focus:invalid{
+    &:focus:invalid {
       border: none;
       border-bottom: $border-thickness-default solid $tertiary-color__red__-2;
     }
@@ -34,9 +34,18 @@
     }
   }
 
-
   &__label {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    display: block;
+    transition: all 0.5s ease-in-out;
+    margin-top: 1rem;
   }
 
+  &__input:placeholder-shown ~ &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem);
+  }
 }

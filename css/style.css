@@ -502,7 +502,7 @@ body {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
   border-radius: 3px;
-  background-color: rgba(253, 252, 251, 0.8);
+  background-color: rgba(253, 252, 251, 0.7);
   border: none;
   border-bottom: 3px solid transparent;
   outline: none;
@@ -519,7 +519,17 @@ body {
     color: #5b5b5b; }
 
 .form__label {
-  font-size: 1.8rem; }
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  margin-top: 1rem; }
+
+.form__input:placeholder-shown ~ .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem); }
 
 .header {
   position: relative;
