@@ -112,3 +112,9 @@ skills related to javascript while developing each section of the project.
 3) How to create a background video covering an entire section
 4) How to use the `<video>` HMTL element 
 5) How and when to use object-fit property
+
+**Section 7 : Building Booking Section**
+1) How to implement solid color gradient 
+2) How the general and adjacent sibling selectors work and why we need them 
+3) How to use `::input-placehilder` pseudo-element
+4) How and when to use `:focus :invalid :placeholder-shown` and` :checked` pseudo class
