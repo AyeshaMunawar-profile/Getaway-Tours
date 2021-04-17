@@ -77,7 +77,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.5rem;
   word-spacing: 0.5rem;
-  background-image: linear-gradient(to right bottom, #6eaf1f, #2e631b);
+  background-image: linear-gradient(to right bottom, #86c421, #2e631b);
   -webkit-background-clip: text;
   color: transparent; }
   .heading-secondary:hover {
@@ -106,6 +106,12 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-right-text {
+  text-align: right; }
+
+.u-left-text {
+  text-align: left; }
 
 .u-margin-bottom-huge {
   margin-bottom: 10rem; }
@@ -188,15 +194,18 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(239, 246, 39, 0.7), rgba(177, 216, 35, 0.75), rgba(110, 175, 31, 0.7), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.6)); }
 
-.book-tour {
+.book {
   width: 100%;
   height: 50rem;
   border-radius: 5px;
   box-shadow: 0 3rem 6rem rgba(91, 91, 91, 0.5);
-  background-image: linear-gradient(105deg, rgba(253, 252, 251, 0.8) 0%, rgba(253, 252, 251, 0.8) 50%, rgba(0, 0, 0, 0) 50%), url("../img/nat-6.jpg");
+  background-image: linear-gradient(105deg, rgba(253, 252, 251, 0.85) 0%, rgba(253, 252, 251, 0.85) 65%, rgba(0, 0, 0, 0) 65%), url("../img/nat-6.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
+  .book__form {
+    width: 65%;
+    padding: 6rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
