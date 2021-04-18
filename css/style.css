@@ -494,6 +494,20 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-label {
+  font-family: inherit;
+  font-size: 2rem;
+  margin-left: 2rem;
+  display: inline-block; }
+
+.form__radio-input {
+  height: 2rem;
+  width: 2rem; }
+
 .form__input {
   width: 100%;
   display: block;
@@ -526,10 +540,10 @@ body {
   transition: all 0.5s ease-in-out;
   margin-top: 1rem; }
 
-.form__input:placeholder-shown ~ .form__label {
+.form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-2rem); }
+  transform: translateY(-4rem); }
 
 .header {
   position: relative;
