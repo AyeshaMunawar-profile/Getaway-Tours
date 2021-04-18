@@ -1,6 +1,6 @@
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   &__input {
@@ -52,7 +52,6 @@
 
   &__radio {
     &-group {
-      margin-top: 2rem;
       width: 49%;
       display: inline-block;
     }
@@ -82,7 +81,7 @@
       border: $border-thickness-default solid $primary-color__0;
       display: inline-block;
       position: absolute;
-      left: 0px;
+      left: 7px;
       top: 2px;
 
       &:hover{
@@ -100,7 +99,7 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         opacity: 0;
-        transition: all 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
       }
 
     }
