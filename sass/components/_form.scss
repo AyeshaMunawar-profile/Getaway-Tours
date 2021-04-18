@@ -65,7 +65,7 @@
       position: relative;
       padding-left: 5rem;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -77,14 +77,14 @@
     &-button {
       height: 2.5rem;
       width: 2.5rem;
-      transform: rotateZ(45deg) ;
+      transform: rotateZ(45deg);
       border: $border-thickness-default solid $primary-color__0;
       display: inline-block;
       position: absolute;
       left: 7px;
       top: 2px;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
 
@@ -105,7 +105,8 @@
     }
 
   }
-  &__radio-input:checked ~ &__radio-label &__radio-button::after{
-      opacity: 1;
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
   }
 }
