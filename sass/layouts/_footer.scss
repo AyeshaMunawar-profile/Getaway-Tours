@@ -2,9 +2,12 @@
   background-color: $neutral-color-grey__4;
   padding: 10rem 0;
   font-size: 1.4rem;
+  color: $neutral-color-off-white__-1;
 
   &__logo-box {
     padding: 5rem 0;
+    text-align: center;
+    margin-bottom: 5rem;
   }
 
   &__logo {
@@ -18,10 +21,16 @@
   }
 
   &__list {
-
+    list-style: none;
+    display: inline-block;
   }
 
   &__item {
 
+  }
+  &__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $neutral-color-off-white__-1;
   }
 }
