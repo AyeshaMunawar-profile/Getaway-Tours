@@ -1,8 +1,8 @@
 .footer {
   background-color: $neutral-color-grey__4;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-  color: $neutral-color-off-white__-1;
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  color: $neutral-color-off-white__0;
 
   &__logo-box {
     padding: 5rem 0;
@@ -22,15 +22,31 @@
 
   &__list {
     list-style: none;
-    display: inline-block;
   }
 
   &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
 
   }
-  &__link{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $neutral-color-off-white__-1;
+
+  &__link {
+
+    &:link,
+    &:visited {
+      color: $neutral-color-off-white__-1;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color__-2;
+    }
   }
 }
