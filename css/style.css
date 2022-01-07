@@ -182,7 +182,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 35rem 0 15rem 0;
+  padding: 25rem 0 25rem 0;
   margin-top: -15rem; }
 
 .section-stories {
@@ -581,9 +581,9 @@ body {
 
 .footer {
   background-color: #222222;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-  color: #f5f3f0; }
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  color: #f3f1e8; }
   .footer__logo-box {
     padding: 5rem 0;
     text-align: center;
@@ -593,12 +593,19 @@ body {
     height: auto;
     margin: 0 auto; }
   .footer__list {
-    list-style: none;
+    list-style: none; }
+  .footer__item {
     display: inline-block; }
-  .footer__link {
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f5f3f0;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #f5f3f0; }
+    transition: all 0.2s ease-in-out; }
+  .footer__link:hover, .footer__link:active {
+    color: #b1d823; }
 
 .header {
   position: relative;
