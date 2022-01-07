@@ -1,7 +1,7 @@
 .footer {
   background-color: $neutral-color-grey__4;
-  padding: 8rem 0;
-  font-size: 1.6rem;
+  padding: 8rem 2rem;
+  font-size: 1.4rem;
   color: $neutral-color-off-white__0;
 
   &__logo-box {
@@ -22,13 +22,14 @@
 
   &__list {
     list-style: none;
+    transform: translateY(-0.8rem);
   }
 
   &__item {
     display: inline-block;
 
     &:not(:last-child) {
-      margin-right: 1.5rem;
+      margin-right: 0.3rem;
     }
 
   }
@@ -47,6 +48,23 @@
     &:hover,
     &:active {
       color: $primary-color__-2;
+    }
+
+    &--button:link,
+    &--button:visited {
+      color: $neutral-color-off-white__-1;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      padding: 0.8rem 1.2rem;
+    }
+
+    &--button:hover,
+    &--button:active {
+      color: $primary-color__-2;
+      border-radius: 11rem;
+      box-shadow: 0 0rem 1rem rgba(1, 1, 1, 0.3);
     }
   }
 }
