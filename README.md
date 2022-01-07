@@ -118,3 +118,7 @@ skills related to javascript while developing each section of the project.
 2) How the general and adjacent sibling selectors work and why we need them 
 3) How to use `::input-placehilder` pseudo-element
 4) How and when to use `:focus :invalid :placeholder-shown` and` :checked` pseudo class
+
+**Section 8 : Building Footer**
+1) I just applied the concepts I have learned already
+2) Use of `display: inline` to make sure the element takes space according to its content and not all the available space 
