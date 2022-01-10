@@ -24,9 +24,11 @@
 
   &__checkbox {
     display: none;
+    transition: all 0.5s ease-in-out;
   }
 
   &__background {
+    transition: all .3s ease-in-out;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -35,17 +37,17 @@
     right: 6.5rem;
     z-index: 999;
     background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
-    //transform: scale(70);
   }
 
   &__menu {
     height: 100vh;
-    width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
-    //display: none;
+    opacity: 0;
+    width: 0;
+    transition: all .2s ease-in-out 0.1s;
   }
 
   &__list {
@@ -90,5 +92,18 @@
       color: transparent;
     }
 
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(70);
+  }
+
+  &__checkbox:checked ~ &__menu {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &__checkbox:checked ~ &__button {
+    background-image: radial-gradient($primary-color__-1, $primary-color__4);
   }
 }
