@@ -1,5 +1,5 @@
 .navigation {
-  font-size: 5rem;
+  font-size: 4.5rem;
 
   &__button {
     background-color: $secondary-color__-2;
@@ -12,14 +12,14 @@
     right: 6rem;
     transition: all 0.2s ease-in-out;
     @include box-shadow-default;
+
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       cursor: pointer;
       height: 6.9rem;
       width: 6.9rem;
     }
-
   }
 
   &__checkbox {
@@ -33,9 +33,8 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    z-index: 1000;
-    background-image: radial-gradient( $secondary-color__-2,$primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
-    transform: scale(70);
+    z-index: 999;
+    background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
   }
 
   &__menu {
@@ -44,7 +43,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1000;
+    display: none;
   }
 
   &__list {
@@ -55,14 +55,39 @@
   }
 
   &__item {
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+    background-size: 0%;
+
+    &:hover,
+    &:active {
+      background-image: linear-gradient(45deg, $neutral-color-off-white__0 0%, $neutral-color-off-white__0 50%, transparent 50%);
+      transform: translateX(3px);
+      background-size: 250%;
+      background-repeat: no-repeat;
+    }
+
   }
 
   &__link {
+    display: block;
+    padding: 0.5rem 5rem;
+
     &:link,
-    &:visited{
+    &:visited {
       color: $neutral-color-off-white__0;
-      font-weight: lighter;
+      font-weight: normal;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
     }
+
+    &:hover,
+    &:active {
+      transform: translateX(3px);
+      background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__4);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
   }
 }
