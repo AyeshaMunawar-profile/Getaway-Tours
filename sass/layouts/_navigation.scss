@@ -2,7 +2,7 @@
   font-size: 4.5rem;
 
   &__button {
-    background-color: $secondary-color__-2;
+    background-image: radial-gradient($secondary-color__-2, $secondary-color__-1);
     height: 7rem;
     width: 7rem;
     z-index: 1001;
@@ -35,6 +35,7 @@
     right: 6.5rem;
     z-index: 999;
     background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
+    //transform: scale(70);
   }
 
   &__menu {
@@ -44,7 +45,7 @@
     top: 0;
     right: 0;
     z-index: 1000;
-    display: none;
+    //display: none;
   }
 
   &__list {
@@ -57,14 +58,14 @@
   &__item {
     margin-top: 2rem;
     transition: all 0.3s ease-in-out;
-    background-size: 0%;
+    background-size: 250%;
 
     &:hover,
     &:active {
-      background-image: linear-gradient(45deg, $neutral-color-off-white__0 0%, $neutral-color-off-white__0 50%, transparent 50%);
-      transform: translateX(3px);
-      background-size: 250%;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $neutral-color-off-white__0 50%, $neutral-color-off-white__0 100%,);
+      transform: translateX(-3px);
       background-repeat: no-repeat;
+      background-position: 100%;
     }
 
   }
@@ -83,7 +84,7 @@
 
     &:hover,
     &:active {
-      transform: translateX(3px);
+      transform: translateX(-3px);
       background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__4);
       -webkit-background-clip: text;
       color: transparent;
