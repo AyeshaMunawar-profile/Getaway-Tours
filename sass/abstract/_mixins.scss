@@ -12,3 +12,9 @@
     0 9px 28px 8px rgba(0, 0, 0, 0.05);
   }
 }
+
+@mixin centralize-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

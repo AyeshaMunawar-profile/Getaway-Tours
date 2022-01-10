@@ -47,17 +47,14 @@
   }
 
   &__list {
+    position: absolute;
     list-style: none;
-    padding: 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    @include centralize-content;
+
   }
 
   &__item {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   &__link {
