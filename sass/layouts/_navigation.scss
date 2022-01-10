@@ -2,7 +2,7 @@
   font-size: 5rem;
 
   &__button {
-    background-color: $secondary-color__-1;
+    background-color: $secondary-color__-2;
     height: 7rem;
     width: 7rem;
     z-index: 1001;
@@ -34,7 +34,8 @@
     top: 6.5rem;
     right: 6.5rem;
     z-index: 1000;
-    background-image: radial-gradient($primary-color__-3, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
+    background-image: radial-gradient( $secondary-color__-2,$primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
+    transform: scale(70);
   }
 
   &__menu {
@@ -51,7 +52,6 @@
     list-style: none;
     text-align: center;
     @include centralize-content;
-
   }
 
   &__item {
