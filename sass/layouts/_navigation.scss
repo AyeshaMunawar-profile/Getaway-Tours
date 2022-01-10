@@ -12,9 +12,10 @@
     right: 6rem;
     transition: all 0.2s ease-in-out;
     @include box-shadow-default;
+
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       cursor: pointer;
       height: 6.9rem;
       width: 6.9rem;
@@ -33,9 +34,9 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    z-index: 1000;
-    background-image: radial-gradient( $secondary-color__-2,$primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
-    transform: scale(70);
+    z-index: 999;
+    background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
+    transform: scale(80);
   }
 
   &__menu {
@@ -44,7 +45,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1000;
   }
 
   &__list {
@@ -55,14 +56,36 @@
   }
 
   &__item {
+    margin-top: 2rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: $neutral-color-off-white__-1;
+      transform: translateX(-3px);
+    }
+
   }
 
   &__link {
+    display: block;
+    padding: 0.5rem 5rem;
+
     &:link,
-    &:visited{
+    &:visited {
       color: $neutral-color-off-white__0;
-      font-weight: lighter;
+      font-weight: normal;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
     }
+
+    &:hover,
+    &:active {
+      transform: translateX(-3px);
+      background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__4);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
   }
 }
