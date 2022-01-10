@@ -690,7 +690,7 @@ body {
 .navigation {
   font-size: 4.5rem; }
   .navigation__button {
-    background-color: #eff627;
+    background-image: radial-gradient(#eff627, #fddf15);
     height: 7rem;
     width: 7rem;
     z-index: 1001;
@@ -722,8 +722,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
-    display: none; }
+    z-index: 1000; }
   .navigation__list {
     position: absolute;
     list-style: none;
@@ -734,12 +733,12 @@ body {
   .navigation__item {
     margin-top: 2rem;
     transition: all 0.3s ease-in-out;
-    background-size: 0%; }
+    background-size: 250%; }
     .navigation__item:hover, .navigation__item:active {
-      background-image: linear-gradient(45deg, #f3f1e8 0%, #f3f1e8 50%, transparent 50%);
-      transform: translateX(3px);
-      background-size: 250%;
-      background-repeat: no-repeat; }
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f3f1e8 50%, #f3f1e8 100%);
+      transform: translateX(-3px);
+      background-repeat: no-repeat;
+      background-position: 100%; }
   .navigation__link {
     display: block;
     padding: 0.5rem 5rem; }
@@ -749,7 +748,7 @@ body {
       text-decoration: none;
       transition: all 0.2s ease-in-out; }
     .navigation__link:hover, .navigation__link:active {
-      transform: translateX(3px);
+      transform: translateX(-3px);
       background-image: linear-gradient(to right bottom, #86c421, #123106);
       -webkit-background-clip: text;
       color: transparent; }
