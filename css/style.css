@@ -690,7 +690,7 @@ body {
 .navigation {
   font-size: 5rem; }
   .navigation__button {
-    background-color: #fddf15;
+    background-color: #eff627;
     height: 7rem;
     width: 7rem;
     z-index: 1001;
@@ -715,7 +715,8 @@ body {
     top: 6.5rem;
     right: 6.5rem;
     z-index: 1000;
-    background-image: radial-gradient(#d7f69e, #b1d823, #86c421, #6eaf1f, #508104); }
+    background-image: radial-gradient(#eff627, #b1d823, #86c421, #6eaf1f, #508104);
+    transform: scale(70); }
   .navigation__menu {
     height: 100vh;
     width: 100vw;
