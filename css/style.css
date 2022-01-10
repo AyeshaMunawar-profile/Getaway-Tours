@@ -724,15 +724,12 @@ body {
     right: 0;
     z-index: 999; }
   .navigation__list {
+    position: absolute;
     list-style: none;
-    padding: 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center; }
-  .navigation__item {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .navigation__link:link, .navigation__link:visited {
     color: #f3f1e8;
     font-weight: lighter;
