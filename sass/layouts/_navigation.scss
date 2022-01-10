@@ -1,4 +1,6 @@
 .navigation {
+  font-size: 5rem;
+
   &__button {
     background-color: $secondary-color__-1;
     height: 7rem;
@@ -8,10 +10,20 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
+    transition: all 0.2s ease-in-out;
+    @include box-shadow-default;
+    &:hover,
+    &:active,
+    &:focus{
+      cursor: pointer;
+      height: 6.9rem;
+      width: 6.9rem;
+    }
+
   }
 
   &__checkbox {
-
+    display: none;
   }
 
   &__background {
@@ -22,22 +34,38 @@
     top: 6.5rem;
     right: 6.5rem;
     z-index: 1000;
-    background-image: radial-gradient($primary-color__-3,$primary-color__-2,$primary-color__-1, $primary-color__0,$primary-color__1);
+    background-image: radial-gradient($primary-color__-3, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
   }
 
   &__menu {
-
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
   }
 
   &__list {
-
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
 
   &__item {
-
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   &__link {
-
+    &:link,
+    &:visited{
+      color: $neutral-color-off-white__0;
+      font-weight: lighter;
+      text-decoration: none;
+    }
   }
 }
