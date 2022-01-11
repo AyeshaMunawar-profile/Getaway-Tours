@@ -28,7 +28,7 @@
   }
 
   &__background {
-    transition: transform .6s cubic-bezier(.6, -0.35, .24, .97);
+    transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -47,7 +47,7 @@
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(.6, .03, 0, 1.51);
+    transition: all 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
   }
 
   &__list {
