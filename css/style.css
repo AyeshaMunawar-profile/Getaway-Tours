@@ -709,7 +709,7 @@ body {
     display: none;
     transition: all 0.5s ease-in-out; }
   .navigation__background {
-    transition: transform .3s ease-in-out;
+    transition: transform 0.6s cubic-bezier(0.6, -0.35, 0.24, 0.97);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -719,14 +719,14 @@ body {
     z-index: 999;
     background-image: radial-gradient(#eff627, #b1d823, #86c421, #6eaf1f, #508104); }
   .navigation__menu {
-    height: 0;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all .3s ease-in-out 0.1s; }
+    transition: all 0.8s cubic-bezier(0.6, 0.03, 0, 1.51); }
   .navigation__list {
     position: absolute;
     list-style: none;
@@ -760,7 +760,6 @@ body {
     transform: scale(70); }
   .navigation__checkbox:checked ~ .navigation__menu {
     width: 100vw;
-    height: 100vh;
     opacity: 1; }
   .navigation__checkbox:checked ~ .navigation__button {
     background-image: radial-gradient(#86c421, #123106); }

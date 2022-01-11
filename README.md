@@ -125,8 +125,8 @@ skills related to javascript while developing each section of the project.
 
 **Section 9 : Create Navigation**
 1) In this section I applied some creative effects to the navigation of the page 
-2) I used "Checkbox hack"
-3) I created custom animation timing function using cubic Bézier curves
+2) I used `Checkbox hack`
+3) I created `custom animation timing function` using `cubic Bézier curves`
 4) I animated "Solid-color gradient"
 5) I used `transform-origin`
 6) Use of radial gradient i.e gradient from the middle part of the element to the outer sides 
