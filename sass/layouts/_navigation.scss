@@ -28,7 +28,7 @@
   }
 
   &__background {
-    transition: all .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -40,14 +40,14 @@
   }
 
   &__menu {
-    height: 100vh;
+    height: 0;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all .2s ease-in-out 0.1s;
+    transition: all .3s ease-in-out 0.1s;
   }
 
   &__list {
@@ -99,7 +99,8 @@
   }
 
   &__checkbox:checked ~ &__menu {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     opacity: 1;
   }
 

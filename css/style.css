@@ -182,13 +182,13 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 25rem 0;
-  margin-top: -15rem; }
+  padding: 25rem 0 25rem 0; }
 
 .section-stories {
-  padding: 15rem 0;
+  padding: 25rem 0;
   color: #5b5b5b;
-  position: relative; }
+  position: relative;
+  margin-top: -15rem; }
 
 .section-booking {
   padding: 20rem 0;
@@ -648,7 +648,7 @@ body {
       width: auto; }
   .header__moving-clouds {
     filter: sepia(100%);
-    opacity: .8;
+    opacity: .9;
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -709,7 +709,7 @@ body {
     display: none;
     transition: all 0.5s ease-in-out; }
   .navigation__background {
-    transition: all .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -719,14 +719,14 @@ body {
     z-index: 999;
     background-image: radial-gradient(#eff627, #b1d823, #86c421, #6eaf1f, #508104); }
   .navigation__menu {
-    height: 100vh;
+    height: 0;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all .2s ease-in-out 0.1s; }
+    transition: all .3s ease-in-out 0.1s; }
   .navigation__list {
     position: absolute;
     list-style: none;
@@ -759,7 +759,8 @@ body {
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(70); }
   .navigation__checkbox:checked ~ .navigation__menu {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     opacity: 1; }
   .navigation__checkbox:checked ~ .navigation__button {
     background-image: radial-gradient(#86c421, #123106); }
