@@ -10,7 +10,8 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
     @include box-shadow-default;
 
     &:hover,
@@ -28,7 +29,7 @@
   }
 
   &__background {
-    transition: transform 0.4s cubic-bezier(0.36, 0, 0.66, -0.56);
+    transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -47,7 +48,7 @@
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all 0.4s cubic-bezier(0.36, 0, 0.66, -0.56);
+    transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56);
   }
 
   &__list {
@@ -94,6 +95,7 @@
 
   }
 
+  //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     transform: scale(70);
   }
@@ -105,5 +107,71 @@
 
   &__checkbox:checked ~ &__button {
     background-image: radial-gradient($primary-color__-1, $primary-color__4);
+  }
+
+  &__checkbox:checked ~ &__button &__icon {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      background-color: $neutral-color-off-white__0;
+      visibility: initial;
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  //ICON
+  &__icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .3s ease-in-out;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $primary-color__2;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: transform .3s ease-in-out;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover &__icon,
+  &__button:active &__icon {
+
+    &::before {
+      transform-origin: center;
+      top: -1rem;
+    }
+
+    &::after {
+      transform-origin: center;
+      top: 1rem;
+    }
   }
 }
