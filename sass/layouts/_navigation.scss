@@ -28,7 +28,7 @@
   }
 
   &__background {
-    transition: transform .3s ease-in-out;
+    transition: transform .6s cubic-bezier(.6, -0.35, .24, .97);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -40,14 +40,14 @@
   }
 
   &__menu {
-    height: 0;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all .3s ease-in-out 0.1s;
+    transition: all .8s cubic-bezier(.6, .03, 0, 1.51);
   }
 
   &__list {
@@ -100,7 +100,6 @@
 
   &__checkbox:checked ~ &__menu {
     width: 100vw;
-    height: 100vh;
     opacity: 1;
   }
 
