@@ -698,7 +698,8 @@ body {
     position: fixed;
     top: 6rem;
     right: 6rem;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    text-align: center; }
     .navigation__button {
       box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
     .navigation__button:hover, .navigation__button:active, .navigation__button:focus {
@@ -709,7 +710,7 @@ body {
     display: none;
     transition: all 0.5s ease-in-out; }
   .navigation__background {
-    transition: transform 0.4s cubic-bezier(0.36, 0, 0.66, -0.56);
+    transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -726,7 +727,7 @@ body {
     z-index: 1000;
     opacity: 0;
     width: 0;
-    transition: all 0.4s cubic-bezier(0.36, 0, 0.66, -0.56); }
+    transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56); }
   .navigation__list {
     position: absolute;
     list-style: none;
@@ -763,3 +764,40 @@ body {
     opacity: 1; }
   .navigation__checkbox:checked ~ .navigation__button {
     background-image: radial-gradient(#86c421, #123106); }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+    background-color: transparent; }
+    .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before, .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+      background-color: #f3f1e8;
+      visibility: initial;
+      top: 0; }
+    .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+      transform: rotate(135deg); }
+    .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+      transform: rotate(-135deg); }
+  .navigation__icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .3s ease-in-out; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #2e631b;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: transform .3s ease-in-out; }
+    .navigation__icon::before {
+      top: -0.8rem; }
+    .navigation__icon::after {
+      top: 0.8rem; }
+  .navigation__button:hover .navigation__icon::before,
+  .navigation__button:active .navigation__icon::before {
+    transform-origin: center;
+    top: -1rem; }
+  .navigation__button:hover .navigation__icon::after,
+  .navigation__button:active .navigation__icon::after {
+    transform-origin: center;
+    top: 1rem; }

@@ -129,4 +129,5 @@ skills related to javascript while developing each section of the project.
 3) I created `custom animation timing function` using `cubic Bézier curves`
 4) I animated "Solid-color gradient"
 5) I used `transform-origin`
-6) Use of radial gradient i.e gradient from the middle part of the element to the outer sides 
+6) Use of radial gradient i.e. gradient from the middle part of the element to the outer sides 
+7) Use of pseudo-elements `::before` `::after` to create the toggle button and animate it when clicked always set content in the psueo class to something or "" by default otherwise it will not appear on the screen also set the containing element's position i.e. the containing button to relative and the button content to absolute to position it within the bound of the button. They can align to the Center using `text-align:center` property
