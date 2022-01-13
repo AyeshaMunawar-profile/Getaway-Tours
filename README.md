@@ -131,3 +131,10 @@ skills related to javascript while developing each section of the project.
 5) I used `transform-origin`
 6) Use of radial gradient i.e. gradient from the middle part of the element to the outer sides 
 7) Use of pseudo-elements `::before` `::after` to create the toggle button and animate it when clicked always set content in the psueo class to something or "" by default otherwise it will not appear on the screen also set the containing element's position i.e. the containing button to relative and the button content to absolute to position it within the bound of the button. They can align to the Center using `text-align:center` property
+
+**Section 10 : Create a pure CSS popup**
+1) Built a nice pop-up with only CSS
+2) Used the `:target` pseudo-class 
+3) Created boxes with equal height using `display: table-cell`
+4) Created CSS `text-column`
+5) Automatically Hyphenated words using `Hyphens`
