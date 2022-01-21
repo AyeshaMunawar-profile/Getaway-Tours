@@ -135,6 +135,6 @@ skills related to javascript while developing each section of the project.
 **Section 10 : Create a pure CSS popup**
 1) Built a nice pop-up with only CSS
 2) Used the `:target` pseudo-class 
-3) Created boxes with equal height using `display: table-cell`
+3) Created boxes with equal height using `display: table-cell` in the children element and `display:table` in the parent element 
 4) Created CSS `text-column`
 5) Automatically Hyphenated words using `Hyphens`

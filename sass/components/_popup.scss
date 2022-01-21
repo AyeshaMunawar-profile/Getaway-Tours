@@ -9,30 +9,42 @@
 
   &__content {
     background-color: $neutral-color-off-white__0;
-    height: 50rem;
     width: 80vw;
     opacity: 1;
     z-index: 2001;
     border-radius: $border-radius-medium;
     @include box-shadow-default;
     @include absolute-center;
+    display: table;
+    overflow: hidden;
   }
 
   &__photo {
+    width: 100%;
+    display: block;
   }
 
   &__left {
-
+    width: 33.333333%;
+    display: table-cell;
   }
 
+  //Apply display : table for the parent element and display : table-cell
+  //for the children to make both children element having the same height
   &__right {
-
+    width: 65.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 4rem 4rem;
   }
 
   &__details {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $neutral-color-grey__-2;
   }
 
   &__paragraph {
-
+    hyphens: auto;
   }
 }
