@@ -579,27 +579,27 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
-.popup__background {
+.popup {
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 2000;
   top: 0;
   left: 0;
-  background-color: #222222;
-  opacity: 0.8; }
-
-.popup__content {
-  position: fixed;
-  background-color: #f3f1e8;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 70vh;
-  width: 80vw;
-  opacity: 1;
-  z-index: 2001;
-  border-radius: 5px; }
+  background-color: rgba(34, 34, 34, 0.8); }
+  .popup__content {
+    background-color: #f3f1e8;
+    height: 50rem;
+    width: 80vw;
+    opacity: 1;
+    z-index: 2001;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .popup__content {
+      box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
 
 .footer {
   background-color: #222222;
@@ -751,9 +751,9 @@ body {
     width: 0;
     transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56); }
   .navigation__list {
-    position: absolute;
     list-style: none;
     text-align: center;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
