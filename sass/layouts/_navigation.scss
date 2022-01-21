@@ -52,10 +52,9 @@
   }
 
   &__list {
-    position: absolute;
     list-style: none;
     text-align: center;
-    @include centralize-content;
+    @include absolute-center;
   }
 
   &__item {
