@@ -2,13 +2,13 @@
   font-size: 4.5rem;
 
   &__button {
-    background-image: radial-gradient($secondary-color__-2, $secondary-color__-1);
-    height: 7rem;
-    width: 7rem;
+    background-color: $neutral-color-off-white__-2;
+    height: 6rem;
+    width: 6rem;
     z-index: 1001;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     right: 6rem;
     transition: all 0.2s ease-in-out;
     text-align: center;
@@ -18,8 +18,8 @@
     &:active,
     &:focus {
       cursor: pointer;
-      height: 6.9rem;
-      width: 6.9rem;
+      height: 5.9rem;
+      width: 5.9rem;
     }
   }
 
@@ -30,11 +30,11 @@
 
   &__background {
     transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 7rem;
     right: 6.5rem;
     z-index: 999;
     background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
@@ -79,7 +79,7 @@
 
     &:link,
     &:visited {
-      color: $neutral-color-off-white__0;
+      color: $neutral-color-off-white__-2;
       font-weight: normal;
       text-decoration: none;
       transition: all 0.2s ease-in-out;
@@ -97,7 +97,7 @@
 
   //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
-    transform: scale(70);
+    transform: scale(85);
   }
 
   &__checkbox:checked ~ &__menu {
