@@ -690,13 +690,13 @@ body {
 .navigation {
   font-size: 4.5rem; }
   .navigation__button {
-    background-image: radial-gradient(#eff627, #fddf15);
-    height: 7rem;
-    width: 7rem;
+    background-color: #f7f7f7;
+    height: 6rem;
+    width: 6rem;
     z-index: 1001;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     right: 6rem;
     transition: all 0.2s ease-in-out;
     text-align: center; }
@@ -704,18 +704,18 @@ body {
       box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
     .navigation__button:hover, .navigation__button:active, .navigation__button:focus {
       cursor: pointer;
-      height: 6.9rem;
-      width: 6.9rem; }
+      height: 5.9rem;
+      width: 5.9rem; }
   .navigation__checkbox {
     display: none;
     transition: all 0.5s ease-in-out; }
   .navigation__background {
     transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 7rem;
     right: 6.5rem;
     z-index: 999;
     background-image: radial-gradient(#eff627, #b1d823, #86c421, #6eaf1f, #508104); }
@@ -748,7 +748,7 @@ body {
     display: block;
     padding: 0.5rem 5rem; }
     .navigation__link:link, .navigation__link:visited {
-      color: #f3f1e8;
+      color: #f7f7f7;
       font-weight: normal;
       text-decoration: none;
       transition: all 0.2s ease-in-out; }
@@ -758,7 +758,7 @@ body {
       -webkit-background-clip: text;
       color: transparent; }
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(70); }
+    transform: scale(85); }
   .navigation__checkbox:checked ~ .navigation__menu {
     width: 100vw;
     opacity: 1; }
@@ -801,3 +801,25 @@ body {
   .navigation__button:active .navigation__icon::after {
     transform-origin: center;
     top: 1rem; }
+
+.popup__background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  opacity: 0.8; }
+
+.popup__content {
+  position: fixed;
+  background-color: #f3f1e8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+  width: 80vw;
+  opacity: 1;
+  z-index: 2001;
+  border-radius: 5px; }
