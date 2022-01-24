@@ -615,8 +615,14 @@ body {
   .popup__details {
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #d9d9d9; }
+    column-rule: 1px solid #d9d9d9;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #d9d9d9; }
   .popup__paragraph {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto; }
 
 .footer {

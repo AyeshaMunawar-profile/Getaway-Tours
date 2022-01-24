@@ -42,9 +42,15 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $neutral-color-grey__-2;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid $neutral-color-grey__-2;
   }
 
   &__paragraph {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto;
   }
 }
