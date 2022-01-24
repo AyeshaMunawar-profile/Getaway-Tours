@@ -138,3 +138,4 @@ skills related to javascript while developing each section of the project.
 3) Created boxes with equal height using `display: table-cell` in the children element and `display:table` in the parent element 
 4) Created CSS `text-column`
 5) Automatically Hyphenated words using `Hyphens`
+6) Navigate to the part of the page by clicking a link simply put in `href="#section-name"` the id of the html element you want to navigate to the element to move to is called as target and the link is called as an anchor 
