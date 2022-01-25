@@ -17,14 +17,27 @@
   ///*takes the default font size 16px (10/16)*100 = 62.5 % so now our 1rem = 62.5 % of the browser's font size
   //which by default has a value of 16px this also allows the user to zoom in on the page i.e
   //increasing all the measurements of the page with zoom
+  //1 rem =10px
   font-size: 62.5%;
+  @include respond(phone){
+    font-size: 50%;
+  }
+  @include respond(tab-port){
+    font-size: 60%;
+  }
+  @include respond(tab-land){
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(big-desktop){
+    font-size: 80%;
+  }
 }
 
 body {
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
