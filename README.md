@@ -138,4 +138,12 @@ skills related to javascript while developing each section of the project.
 3) Created boxes with equal height using `display: table-cell` in the children element and `display:table` in the parent element 
 4) Created CSS `text-column`
 5) Automatically Hyphenated words using `Hyphens`
-6) Navigate to the part of the page by clicking a link simply put in `href="#section-name"` the id of the html element you want to navigate to the element to move to is called as target and the link is called as an anchor 
+6) Navigate to the part of the page by clicking a link simply put in `href="#section-name"` the id of the html element you want to navigate to the element to move to is called as target and the link is called as an anchor
+
+**Section 11: Make the website responsive**
+1) I used Desktop first approach to create the website i.e I created the website for desktop first and then shrunk the design for smaller screens
+2) I used the most popular screen sizes from the internet and grouped them together based on device type thus defining breakpoints for my project 
+3) The breakpoints I descided are `Phone only (0-600px)` , `Tablet Portrait : 600px - 900px` , `Tablet Landscape : 900px - 1200px ` , `Desktop: 1200px - 1800px ` , `Bigger Desktops : >=1800px`
+4) I used Max-with for media queries for Desktop first approach (min-width is used for Mobile first approach)
+5) I used a powerful SASS mixin to write all media queries 
+6) I used `@content` and `@if` SASS directives
