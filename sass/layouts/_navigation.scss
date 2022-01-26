@@ -21,6 +21,19 @@
       height: 5.9rem;
       width: 5.9rem;
     }
+
+    @include respond(tab-land) {
+      top: 7rem;
+      right: 9rem;
+    }
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__checkbox {
@@ -29,6 +42,19 @@
   }
 
   &__background {
+    @include respond(tab-land) {
+      top: 7rem;
+      right: 10.2rem;
+    }
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 4rem;
+      right: 4rem;
+    }
+
     transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
     height: 5rem;
     width: 5rem;
@@ -37,7 +63,7 @@
     top: 7.2rem;
     right: 7.2rem;
     z-index: 999;
-    background-image: radial-gradient($primary-color__-2,$primary-color__-1, $primary-color__0, $primary-color__1);
+    background-image: radial-gradient($primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1)
   }
 
   &__menu {
@@ -55,12 +81,16 @@
     list-style: none;
     text-align: center;
     @include absolute-center;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__item {
     margin-top: 2rem;
     transition: all 0.3s ease-in-out;
     background-size: 250%;
+    width: 100%;
 
     &:hover,
     &:active {
@@ -102,6 +132,9 @@
   &__checkbox:checked ~ &__menu {
     width: 100vw;
     opacity: 1;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__checkbox:checked ~ &__button {
