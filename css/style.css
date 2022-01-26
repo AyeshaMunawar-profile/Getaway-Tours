@@ -15,18 +15,15 @@
 
 :root {
   font-size: 62.5%; }
-  @media (max-width: 37.5em) {
-    :root {
-      font-size: 50%; } }
-  @media (max-width: 56.25em) {
-    :root {
-      font-size: 60%; } }
-  @media (max-width: 75em) {
-    :root {
-      font-size: 50%; } }
   @media (min-width: 112.5em) {
     :root {
-      font-size: 80%; } }
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    :root {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    :root {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
