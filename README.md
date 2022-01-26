@@ -147,3 +147,5 @@ skills related to javascript while developing each section of the project.
 4) I used Max-with for media queries for Desktop first approach (min-width is used for Mobile first approach)
 5) I used a powerful SASS mixin to write all media queries 
 6) I used `@content` and `@if` SASS directives
+7) I started using media queries starting from the base and typography and them to the layout like header footer  grid 
+8) Then I wrote media queries for the page layout and then for the components
