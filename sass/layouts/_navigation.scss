@@ -9,7 +9,7 @@
     border-radius: 50%;
     position: fixed;
     top: 7rem;
-    right: 6rem;
+    right: 7rem;
     transition: all 0.2s ease-in-out;
     text-align: center;
     @include box-shadow-default;
@@ -34,17 +34,17 @@
     width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 7rem;
-    right: 6.5rem;
+    top: 7.2rem;
+    right: 7.2rem;
     z-index: 999;
-    background-image: radial-gradient($secondary-color__-2, $primary-color__-2, $primary-color__-1, $primary-color__0, $primary-color__1);
+    background-image: radial-gradient($primary-color__-2,$primary-color__-1, $primary-color__0, $primary-color__1);
   }
 
   &__menu {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1000;
     opacity: 0;
     width: 0;
