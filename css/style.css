@@ -698,6 +698,9 @@ body {
   padding: 15rem 2rem;
   font-size: 1.4rem;
   color: #f3f1e8; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     padding: 5rem 0;
     text-align: center;
@@ -718,6 +721,9 @@ body {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 0.3rem; }
+  @media (max-width: 56.25em) {
+    .footer__copyright {
+      text-align: center; } }
   .footer__link:link, .footer__link:visited {
     color: #f5f3f0;
     display: inline-block;
@@ -785,7 +791,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;

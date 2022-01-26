@@ -4,6 +4,9 @@
   font-size: 1.4rem;
   color: $neutral-color-off-white__0;
 
+  @include respond(tab-port){
+    padding: 8rem 0;
+  }
   &__logo-box {
     padding: 5rem 0;
     text-align: center;
@@ -39,6 +42,11 @@
 
   }
 
+  &__copyright{
+    @include respond(tab-port){
+      text-align: center;
+    }
+  }
   &__link {
 
     &:link,
