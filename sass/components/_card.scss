@@ -155,4 +155,53 @@
     font-size: 6rem;
     font-weight: 100;
   }
+
+
+  @include respond(tab-port) {
+    height: auto;
+    background-color: $neutral-color-white;
+    border-radius: $border-radius-medium;
+    box-shadow: 0 1.5rem 4rem rgba($neutral-color-grey__2, 0.2);
+    &__side {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: $border-radius-medium $border-radius-medium 0 0;
+      box-shadow: none;
+
+      &--back {
+        //backside already rotated 180deg by default
+        transform: rotateY(0deg);
+        clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0 0 $border-radius-medium $border-radius-medium;
+        z-index: 1;
+      }
+    }
+    &__picture {
+      height: 30rem;
+    }
+    &__details {
+      padding: 3rem 1rem;
+    }
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 5rem 5rem 7rem 5rem;
+    }
+    &__price-box {
+      margin-bottom: 1rem;
+      margin-top: 4rem;
+    }
+    &__price-value {
+      font-size: 5rem;
+    }
+  }
+
 }

@@ -8,13 +8,15 @@
   @include respond(tab-port) {
     padding: 20rem 0;
   }
-  .heading-secondary{
+
+  .heading-secondary {
     @include respond(tab-port) {
       margin-top: 10rem;
       padding: 0 5rem;
     }
   }
 }
+
 .section-features {
   padding: 35rem 0;
   background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, .7), rgba(
@@ -33,7 +35,7 @@
   }
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: 15rem 0;
   }
 }
 

@@ -283,7 +283,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 20rem 0; } }
+      padding: 15rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -593,6 +593,41 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      background-color: #fdfcfb;
+      border-radius: 5px;
+      box-shadow: 0 1.5rem 4rem rgba(67, 67, 67, 0.2); }
+      .card__side {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0deg);
+          clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+          border-radius: 0 0 5px 5px;
+          z-index: 1; }
+      .card__picture {
+        height: 30rem; }
+      .card__details {
+        padding: 3rem 1rem; }
+      .card:hover .card__side--front {
+        transform: rotateY(0deg); }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 5rem 5rem 7rem 5rem; }
+      .card__price-box {
+        margin-bottom: 1rem;
+        margin-top: 4rem; }
+      .card__price-value {
+        font-size: 5rem; } }
 
 .story {
   width: 80%;
