@@ -31,7 +31,7 @@
       right: 4rem;
     }
     @include respond(phone) {
-      top: 3rem;
+      top: 3.5rem;
       right: 3rem;
     }
   }
@@ -43,16 +43,16 @@
 
   &__background {
     @include respond(tab-land) {
-      top: 7rem;
-      right: 10.2rem;
+      top: 7.5rem;
+      right: 9.5rem;
     }
     @include respond(tab-port) {
       top: 4.5rem;
       right: 4.5rem;
     }
     @include respond(phone) {
-      top: 4rem;
-      right: 4rem;
+      top: 4.5rem;
+      right: 3.5rem;
     }
 
     transition: transform 0.3s cubic-bezier(0.3, 0, 0.66, -0.56);
