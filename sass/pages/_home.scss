@@ -2,6 +2,9 @@
   background-color: $neutral-color-off-white__-2;
   padding: 35rem 0;
   margin-top: -25vh;
+  @include respond(tab-port) {
+    padding: 40rem 0;
+  }
 }
 
 .section-features {
@@ -20,11 +23,18 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .section-tours {
   background-color: $neutral-color-off-white__-2;
   padding: 20rem 0 25rem 0;
+  @include respond(tab-port) {
+    padding: 15rem 0 20rem 0;
+  }
 }
 
 .section-stories {
@@ -32,6 +42,10 @@
   color: $neutral-color-grey__1;
   position: relative;
   margin-top: -15rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .section-booking {
