@@ -3,10 +3,15 @@
   padding: 35rem 0;
   margin-top: -25vh;
   @include respond(tab-port) {
-    padding: 40rem 0;
+    padding: 20rem 0;
+  }
+  .heading-secondary{
+    @include respond(tab-port) {
+      margin-top: 10rem;
+      padding: 0 5rem;
+    }
   }
 }
-
 .section-features {
   padding: 35rem 0;
   background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, .7), rgba(
@@ -55,6 +60,9 @@
           rgba($primary-color__0, 0.7),
           rgba($primary-color__1, 0.7),
           rgba($primary-color__2, 0.6));
+  @include respond(tab-port) {
+    padding: 12rem 0 20rem 0;
+  }
 }
 
 .book {
