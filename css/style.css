@@ -635,10 +635,22 @@ body {
   box-shadow: 0 3rem 6rem rgba(91, 91, 91, 0.3);
   background-color: rgba(253, 252, 251, 0.7);
   border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 6rem 6rem 6rem 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 6rem 5rem 6rem 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      width: 100%;
+      transform: skewX(0deg);
+      padding: 4rem 3rem 4rem 4rem; } }
+  @media (max-width: 18.75em) {
+    .story {
+      text-align: center;
+      padding: 5rem 3rem 5rem 4rem; } }
   .story__shape {
     width: 20rem;
     height: 20rem;
@@ -649,6 +661,21 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.5deg);
     position: relative; }
+    @media (max-width: 56.25em) {
+      .story__shape {
+        width: 15rem;
+        height: 15rem;
+        transform: translateX(-4rem) skewX(12.5deg); } }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        width: 13rem;
+        height: 13rem;
+        transform: translateX(-2rem) skewX(0deg); } }
+    @media (max-width: 18.75em) {
+      .story__shape {
+        width: 20rem;
+        height: 20rem;
+        transform: translateX(1rem) skewX(0deg); } }
   .story__picture {
     height: 100%;
     width: auto;
@@ -656,6 +683,12 @@ body {
     transition: all 1s ease-in-out; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0deg); } }
+    @media (max-width: 18.75em) {
+      .story__text {
+        margin-top: 25rem; } }
   .story__caption {
     color: #fdfcfb;
     position: absolute;
@@ -948,7 +981,7 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
+      max-width: 55rem;
       padding: 0 3rem; } }
   .row::after {
     content: "";
