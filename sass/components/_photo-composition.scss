@@ -1,8 +1,11 @@
 .composition {
   position: relative;
+  @include respond(tab-port) {
+    margin-bottom: 10rem;
+  }
 
   &__photo {
-    width: 60%;
+    width: 55%;
     height: auto;
     box-shadow: 0 1.5rem 4rem rgba($neutral-color-grey__0, 0.5);
     border-radius: $border-radius-default;
@@ -10,20 +13,62 @@
     transition: all 0.2s ease-in-out;
     z-index: 10;
     //outline-offset: 2rem;
+    @include respond(tab-land) {
+      width: 53%;
+    }
+    @include respond(tab-port) {
+      width: 52%;
+    }
+    @include respond(phone) {
+      width: 40%;
+    }
 
     &--p1 {
       left: 0;
       top: -2rem;
+      @include respond(tab-land) {
+        top: -2rem;
+      }
+      @include respond(tab-port) {
+        top: -2rem;
+      }
+      @include respond(phone) {
+        top: -1rem;
+      }
     }
 
     &--p2 {
       left: 53%;
       top: 3rem;
+      @include respond(tab-land) {
+        left: 40%;
+        top: 2rem;
+      }
+      @include respond(tab-port) {
+        left: 62%;
+        top: -1rem;
+      }
+      @include respond(phone) {
+        left: 62%;
+        top: -1rem;
+      }
     }
 
     &--p3 {
       left: 17%;
       top: 15rem;
+      @include respond(tab-land) {
+        left: 17%;
+        top: 15rem;
+      }
+      @include respond(tab-port) {
+        left: 33%;
+        top: 4rem;
+      }
+      @include respond(phone) {
+        left: 33%;
+        top: 2rem;
+      }
     }
 
     &:hover {
@@ -33,7 +78,7 @@
       padding: 1.5rem;
       border: 1rem solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to left top, rgba($primary-color__1,1), rgba($primary-color__-2,1));
+      border-image-source: linear-gradient(to left top, rgba($primary-color__1, 1), rgba($primary-color__-2, 1));
 
       transform: scale(1.2);
       box-shadow: 0 1.7rem 4rem rgba($neutral-color-grey__0, 0.6);
@@ -41,7 +86,7 @@
     }
   }
 
-  &:hover &__photo:not(:hover){
+  &:hover &__photo:not(:hover) {
     transform: scale(0.95) translateY(-5px);
 
   }
