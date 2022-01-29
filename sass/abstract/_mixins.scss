@@ -38,6 +38,12 @@
 // rem does not always works in media queries so use em
 // 1em = 16px
 @mixin respond($breakpoint) {
+  //300px
+  @if $breakpoint == small-phone {
+    @media (max-width: 18.75em) {
+      @content
+    }
+  }
   //600px
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
