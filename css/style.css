@@ -834,7 +834,7 @@ body {
 .popup {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 2000;
   top: 0;
   left: 0;
@@ -846,30 +846,77 @@ body {
   .popup__content {
     transition: all 0.4s ease-in-out .2s;
     background-color: #f3f1e8;
-    width: 80vw;
+    width: 85vw;
     z-index: 2001;
     border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: table;
     overflow: hidden;
     transform: translate(-50%, -50%) scale(-0.2);
-    opacity: 0; }
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr 2.7fr;
+    overflow-y: auto; }
     .popup__content {
       box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: 90vw;
+        display: block; } }
+  .popup__left {
+    width: 100%;
+    height: 64.99rem; }
+    @media (max-width: 75em) {
+      .popup__left {
+        height: 30rem;
+        width: 100%;
+        display: block; } }
+  .popup__photo-list {
+    width: 100%;
+    height: 64.99rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    @media (max-width: 75em) {
+      .popup__photo-list {
+        width: 100%;
+        height: 30rem;
+        border-radius: 5px;
+        margin: 8rem auto;
+        display: block; } }
   .popup__photo {
     width: 100%;
-    display: block; }
-  .popup__left {
-    width: 33.333333%;
-    display: table-cell; }
+    height: 32.49rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hard-light; }
+    @media (max-width: 75em) {
+      .popup__photo {
+        height: 30rem;
+        width: 80%;
+        border-radius: 5px; } }
+    .popup__photo--1 {
+      background-image: url("../img/nat-15.jpg"); }
+      @media (max-width: 75em) {
+        .popup__photo--1 {
+          margin: 0 auto; } }
+    .popup__photo--2 {
+      background-image: url("../img/nat-32.jpg"); }
+      @media (max-width: 75em) {
+        .popup__photo--2 {
+          display: none; } }
   .popup__right {
-    width: 65.666667%;
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
     padding: 4rem 4rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: block;
+        padding: 7rem 3rem; } }
   .popup__details {
     column-count: 2;
     column-gap: 4rem;
@@ -877,6 +924,10 @@ body {
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid #d9d9d9; }
+    @media (max-width: 75em) {
+      .popup__details {
+        columns: 1;
+        margin-bottom: 3rem !important; } }
   .popup__paragraph {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
