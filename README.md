@@ -157,4 +157,5 @@ skills related to javascript while developing each section of the project.
    3) Third way is art direction to serve different image for the different screen or cropped image
 2) How to use the `srcset` attribute on the `<img>` and `<source>` elements , together with density descriptors 
 3) How and why to use the `<picture>` element for the art direction
-4) How to write media queries in HTML
+4) How to write media queries in HTML using `<picture>` `<source>` and `<img>`
+5) How to allow the browser to decide the best image to download using the `srcset` attribute width descriptors and the `sizes` attribute of the `<img>` element 
