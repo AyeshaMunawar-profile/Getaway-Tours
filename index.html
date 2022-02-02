@@ -33,7 +33,7 @@
 </div>
 <header class="header">
     <div class="header__logo-box z-index-2">
-        <img src="img/logo%20yellow%20half%201.png" alt="logo" class="header__logo-box__logo">
+        <img srcset="img/logo-green-2x.png 2x, img/logo-green-1x.png 1x" alt="logo" class="header__logo-box__logo">
     </div>
     <div class="header__text-box z-index-2">
         <h1 class="heading-primary">
@@ -324,7 +324,15 @@
 </main>
 <footer class="footer">
     <div class="footer__logo-box d-justify-center">
-        <img src="img/logo%20getaway%20tours%20green%20small.png" alt="getaway tours logo" class="footer__logo">
+        <picture class="footer__logo">
+            <!-- if the screen width < 600px then show the smaller image for the logo in the footer
+            density switching is happening within a particular screen size -->
+            <source srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+                    media="[max-width: 37.5em]">
+            <img srcset="img/logo-green-1x.png 1x , img/logo-green-2x.png 2x"
+                 alt="getaway tours logo">
+        </picture>
+
     </div>
     <div class="row">
         <div class="col-1-of-2">
