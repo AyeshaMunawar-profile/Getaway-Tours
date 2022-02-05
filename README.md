@@ -150,11 +150,17 @@ skills related to javascript while developing each section of the project.
 7) I started using media queries starting from the base and typography and them to the layout like header footer  grid 
 8) Then I wrote media queries for the page layout and then for the components
 
-**Section 12: Use responsive images**
+**Section 12: Use responsive images in HTML**
 1) Make images responsive for making the website responsive and improving web performance. The purpose behind responsive images is to serve the right image to the right screen size and device in order to avoid downloading unnecessary large images on the smaller screens 
    1) One way of doing it is resolution switching i.e. decrease image resolution for smaller screens 
    2) Density switching special type of resolution switching eg. for 2x screen (2 pixels to show 1 pixels of design) show high resolution image with double resolution and for 1x screen low resolution e.g. half the image resolution. decrease pixel density i.e. no of pixels per inch or cm while the dimensions of the image remains the same 
    3) Third way is art direction to serve different image for the different screen or cropped image
 2) How to use the `srcset` attribute on the `<img>` and `<source>` elements , together with density descriptors 
 3) How and why to use the `<picture>` element for the art direction
-4) How to write media queries in HTML
+4) How to write media queries in HTML using `<picture>` `<source>` and `<img>`
+5) How to allow the browser to decide the best image to download using the `srcset` attribute width descriptors and the `sizes` attribute of the `<img>` element 
+
+**Section 13: Use responsive images in CSS**
+1) How ot implement responsive images in CSS
+2) How to use resolution media queries to target high-resolution screens with 2x 
+3) How to combine multiple conditions in media queries 
