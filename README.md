@@ -161,6 +161,10 @@ skills related to javascript while developing each section of the project.
 5) How to allow the browser to decide the best image to download using the `srcset` attribute width descriptors and the `sizes` attribute of the `<img>` element 
 
 **Section 13: Use responsive images in CSS**
-1) How ot implement responsive images in CSS
+1) How to implement responsive images in CSS `,` indicates OR condition in media queries and `and` shows AND condition e.g.
+
+   `@media (min-resolution: 192dpi) and (min-width: 600px),
+   (min-width: 2000px)`
+
 2) How to use resolution media queries to target high-resolution screens with 2x 
 3) How to combine multiple conditions in media queries 
