@@ -971,6 +971,11 @@ body {
     width: 18rem;
     height: auto;
     margin: 0 auto; }
+    .footer__logo__image {
+      width: 20rem; }
+      @media (max-width: 56.25em) {
+        .footer__logo__image {
+          width: 40%; } }
   .footer__column {
     border-top: solid 1px #f3f1e8;
     padding-top: 2rem;
