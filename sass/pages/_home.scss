@@ -19,11 +19,11 @@
 
 .section-features {
   padding: 35rem 0;
-  background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, .7), rgba(
-                  $primary-color__-2, .75),
-          rgba($primary-color__0, 0.7),
-          rgba($primary-color__1, 0.7),
-          rgba($primary-color__2, 0.6)), url("../img/nat-11.jpg");
+  background-image: linear-gradient(to right bottom, rgba($secondary-color-u__-2, 70%), rgba(
+                  $primary-color-u__-2, 75%),
+          rgba($primary-color-u__0, 70%),
+          rgba($primary-color-u__1, 70%),
+          rgba($primary-color-u__2, 60%)), url("../img/nat-11.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,11 +60,11 @@
 
 .section-booking {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, .7), rgba(
-                  $primary-color__-2, .75),
-          rgba($primary-color__0, 0.7),
-          rgba($primary-color__1, 0.7),
-          rgba($primary-color__2, 0.6));
+  background-image: linear-gradient(to right bottom, rgba($secondary-color-u__-2, 70%), rgba(
+                  $primary-color-u__-2, 75%),
+          rgba($primary-color-u__0, 70%),
+          rgba($primary-color-u__1, 70%),
+          rgba($primary-color-u__2, 60%));
   @include respond(tab-land) {
     padding: 15rem 0;
   }
