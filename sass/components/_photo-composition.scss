@@ -38,15 +38,15 @@
     }
 
     &--p2 {
-      left: 53%;
+      left: 48%;
       top: 3rem;
       @include respond(tab-land) {
         left: 40%;
         top: 2rem;
       }
       @include respond(tab-port) {
-        left: 62%;
-        top: -1rem;
+        left: 63%;
+        top: -2rem;
       }
       @include respond(phone) {
         left: 62%;

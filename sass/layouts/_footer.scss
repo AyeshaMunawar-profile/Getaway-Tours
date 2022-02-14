@@ -24,8 +24,11 @@
 
     &__image {
       width: 20rem;
+      @include respond(tab-land) {
+        width: 25%;
+      }
       @include respond(tab-port) {
-        width: 40%;
+        width: 35%;
       }
     }
   }
