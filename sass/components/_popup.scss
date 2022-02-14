@@ -69,14 +69,34 @@
     }
 
     &--1 {
-      background-image: url("../img/nat-15.jpg");
+      background-image: url("../img/nat-15x1200.png");
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: url("../img/nat-15x1920.jpg");
+      }
+      @media (max-width: 75em) {
+        background-image: url("../img/nat-15x900.png");
+      }
+      @media (max-width: 56.25em) {
+        background-image: url("../img/nat-15x600.png");
+      }
       @include respond(tab-land) {
         margin: 0 auto;
       }
     }
 
     &--2 {
-      background-image: url("../img/nat-32.jpg");
+      background-image: url("../img/nat-32x1200.png");
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: url("../img/nat-32x1920.jpg");
+      }
+      @media (max-width: 75em) {
+        background-image: url("../img/nat-32x900.png");
+      }
+      @media (max-width: 56.25em) {
+        background-image: url("../img/nat-32x600.png");
+      }
       @include respond(tab-land) {
         display: none;
       }

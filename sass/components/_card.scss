@@ -60,27 +60,50 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1-large.jpg");
+      background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1x887.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1x1000.jpg");
+      }
+      @media (max-width: 75em) {
+        background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1x300.png");
+      }
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1)), url("../img/nat-32.jpg");
+      background-image: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1)), url("../img/nat-32x900.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1)), url("../img/nat-32x1200.png");
+      }
+      @media (max-width: 75em) {
+        background-image: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1)), url("../img/nat-32x600.png");
+      }
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 1), rgba($tertiary-color__red__0, 1)), url("../img/nat-52.jpg");
+      background-image: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 1), rgba($tertiary-color__red__0, 1)), url("../img/nat-52x900.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 1), rgba($tertiary-color__red__0, 1)), url("../img/nat-52x1200.png");
+
+      }
+      @media (max-width: 75em) {
+        background-image: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 1), rgba($tertiary-color__red__0, 1)), url("../img/nat-52x500.png");
+
+      }
     }
   }
 

@@ -559,23 +559,41 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #fddf15, #db8200), url("../img/nat-1-large.jpg");
+      background-image: linear-gradient(to right bottom, #fddf15, #db8200), url("../img/nat-1x887.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light; }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #fddf15, #db8200), url("../img/nat-1x1000.jpg"); } }
+      @media (max-width: 75em) {
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #fddf15, #db8200), url("../img/nat-1x300.png"); } }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, turquoise, #26867d), url("../img/nat-32.jpg");
+      background-image: linear-gradient(to right bottom, turquoise, #26867d), url("../img/nat-32x900.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light; }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--2 {
+          background-image: linear-gradient(to right bottom, turquoise, #26867d), url("../img/nat-32x1200.png"); } }
+      @media (max-width: 75em) {
+        .card__picture--2 {
+          background-image: linear-gradient(to right bottom, turquoise, #26867d), url("../img/nat-32x600.png"); } }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #fc6a6a, #b64201), url("../img/nat-52.jpg");
+      background-image: linear-gradient(to right bottom, #fc6a6a, #b64201), url("../img/nat-52x900.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light; }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--3 {
+          background-image: linear-gradient(to right bottom, #fc6a6a, #b64201), url("../img/nat-52x1200.png"); } }
+      @media (max-width: 75em) {
+        .card__picture--3 {
+          background-image: linear-gradient(to right bottom, #fc6a6a, #b64201), url("../img/nat-52x500.png"); } }
   .card__heading {
     color: #fdfcfb;
     font-size: 2.8rem;
@@ -915,12 +933,30 @@ body {
         width: 80%;
         border-radius: 5px; } }
     .popup__photo--1 {
-      background-image: url("../img/nat-15.jpg"); }
+      background-image: url("../img/nat-15x1200.png"); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .popup__photo--1 {
+          background-image: url("../img/nat-15x1920.jpg"); } }
+      @media (max-width: 75em) {
+        .popup__photo--1 {
+          background-image: url("../img/nat-15x900.png"); } }
+      @media (max-width: 56.25em) {
+        .popup__photo--1 {
+          background-image: url("../img/nat-15x600.png"); } }
       @media (max-width: 75em) {
         .popup__photo--1 {
           margin: 0 auto; } }
     .popup__photo--2 {
-      background-image: url("../img/nat-32.jpg"); }
+      background-image: url("../img/nat-32x1200.png"); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .popup__photo--2 {
+          background-image: url("../img/nat-32x1920.jpg"); } }
+      @media (max-width: 75em) {
+        .popup__photo--2 {
+          background-image: url("../img/nat-32x900.png"); } }
+      @media (max-width: 56.25em) {
+        .popup__photo--2 {
+          background-image: url("../img/nat-32x600.png"); } }
       @media (max-width: 75em) {
         .popup__photo--2 {
           display: none; } }
