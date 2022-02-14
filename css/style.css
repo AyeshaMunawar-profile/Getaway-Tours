@@ -280,12 +280,18 @@ body {
 
 .section-features {
   padding: 35rem 0;
-  background-image: linear-gradient(to right bottom, #dbe246, #b6dc39, #7cb939, #5e901e, #3d772a), url("../img/nat-11.jpg");
+  background-image: linear-gradient(to right bottom, rgba(239, 246, 39, 0.7), rgba(110, 175, 31, 0.7), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.6)), url("../img/nat-11x1500.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -12rem; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(239, 246, 39, 0.7), rgba(110, 175, 31, 0.7), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.6)), url("../img/nat-11x1920.jpg"); } }
+  @media (max-width: 37.5em) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(239, 246, 39, 0.7), rgba(110, 175, 31, 0.7), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.6)), url("../img/nat-11x900.png"); } }
   .section-features > * {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
@@ -319,16 +325,20 @@ body {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 3rem 6rem rgba(91, 91, 91, 0.5);
-  background-image: linear-gradient(105deg, rgba(253, 252, 251, 0.85) 0%, rgba(253, 252, 251, 0.85) 65%, rgba(0, 0, 0, 0) 65%), url("../img/nat-6.jpg");
+  background-image: linear-gradient(105deg, rgba(253, 252, 251, 0.85) 0%, rgba(253, 252, 251, 0.85) 65%, rgba(0, 0, 0, 0) 65%), url("../img/nat-6x1600.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(253, 252, 251, 0.85) 0%, rgba(253, 252, 251, 0.85) 65%, rgba(0, 0, 0, 0) 65%), url("../img/nat-6x2000.jpg"); } }
   @media (max-width: 75em) {
     .book {
-      background-size: cover; } }
+      background-size: cover;
+      background-image: linear-gradient(to right, rgba(253, 252, 251, 0.8) 0%, rgba(253, 252, 251, 0.8) 100%), url("../img/nat-6x1200.png"); } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(253, 252, 251, 0.8) 0%, rgba(253, 252, 251, 0.8) 100%), url("../img/nat-6.jpg"); } }
+      background-image: linear-gradient(to right, rgba(253, 252, 251, 0.8) 0%, rgba(253, 252, 251, 0.8) 100%), url("../img/nat-6x600.png"); } }
   .book__form {
     width: 65%;
     padding: 6rem; }
@@ -1025,11 +1035,17 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to left bottom, rgba(239, 246, 39, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.75)), url("../img/nat-12.jpg");
+  background-image: linear-gradient(to left bottom, rgba(239, 246, 39, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.75)), url("../img/nat-12x1500.png");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   overflow: hidden; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to left bottom, rgba(239, 246, 39, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.75)), url("../img/nat-12x1920.jpg"); } }
+  @media (max-width: 75em) {
+    .header {
+      background-image: linear-gradient(to left bottom, rgba(239, 246, 39, 0.4), rgba(177, 216, 35, 0.5), rgba(110, 175, 31, 0.6), rgba(80, 129, 4, 0.7), rgba(46, 99, 27, 0.75)), url("../img/nat-12x1200.png"); } }
   @media (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }

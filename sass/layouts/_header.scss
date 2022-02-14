@@ -6,11 +6,29 @@
                   $primary-color__-2, .5),
           rgba($primary-color__0, 0.6),
           rgba($primary-color__1, 0.7),
-          rgba($primary-color__2, 0.75)), url("../img/nat-12.jpg");
+          rgba($primary-color__2, 0.75)), url("../img/nat-12x1500.png");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   overflow: hidden;
+  // apple retina screen resolution for higher resolution
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+    background-image: linear-gradient(to left bottom, rgba(
+                    $secondary-color__-2, .4), rgba(
+                    $primary-color__-2, .5),
+            rgba($primary-color__0, 0.6),
+            rgba($primary-color__1, 0.7),
+            rgba($primary-color__2, 0.75)), url("../img/nat-12x1920.jpg");
+  }
+  @media (max-width: 75em) {
+    background-image: linear-gradient(to left bottom, rgba(
+                    $secondary-color__-2, .4), rgba(
+                    $primary-color__-2, .5),
+            rgba($primary-color__0, 0.6),
+            rgba($primary-color__1, 0.7),
+            rgba($primary-color__2, 0.75)), url("../img/nat-12x1200.png");
+  }
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }

@@ -26,11 +26,23 @@
 
 .section-features {
   padding: 35rem 0;
-  background-image: linear-gradient(to right bottom, rgba($secondary-color-u__-2, 70%), rgba(
-                  $primary-color-u__-2, 75%),
-          rgba($primary-color-u__0, 70%),
-          rgba($primary-color-u__1, 70%),
-          rgba($primary-color-u__2, 60%)), url("../img/nat-11.jpg");
+  background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, 0.7),
+          rgba($primary-color__0, 0.7),
+          rgba($primary-color__1, 0.7),
+          rgba($primary-color__2, 0.6)), url("../img/nat-11x1500.png");
+  @media(min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+    background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, 0.7),
+            rgba($primary-color__0, 0.7),
+            rgba($primary-color__1, 0.7),
+            rgba($primary-color__2, 0.6)), url("../img/nat-11x1920.jpg");
+  }
+  @media (max-width: 37.5em){
+    background-image: linear-gradient(to right bottom, rgba($secondary-color__-2, 0.7),
+            rgba($primary-color__0, 0.7),
+            rgba($primary-color__1, 0.7),
+            rgba($primary-color__2, 0.6)), url("../img/nat-11x900.png");
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -82,16 +94,23 @@
   border-radius: $border-radius-medium;
   box-shadow: 0 3rem 6rem rgba($neutral-color-grey__1, 0.5);
   background-image: linear-gradient(105deg, rgba($neutral-color-white, 0.85) 0%,
-          rgba($neutral-color-white, 0.85) 65%, rgba(transparent, 0) 65%), url("../img/nat-6.jpg");
+          rgba($neutral-color-white, 0.85) 65%, rgba(transparent, 0) 65%), url("../img/nat-6x1600.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  @media(min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+    background-image: linear-gradient(105deg, rgba($neutral-color-white, 0.85) 0%,
+            rgba($neutral-color-white, 0.85) 65%, rgba(transparent, 0) 65%), url("../img/nat-6x2000.jpg");
+  }
   @include respond(tab-land) {
     background-size: cover;
+    background-image: linear-gradient(to right, rgba($neutral-color-white, 0.8) 0%,
+            rgba($neutral-color-white, 0.8) 100%), url("../img/nat-6x1200.png");
   }
   @include respond(tab-port) {
     background-image: linear-gradient(to right, rgba($neutral-color-white, 0.8) 0%,
-            rgba($neutral-color-white, 0.8) 100%), url("../img/nat-6.jpg");
+            rgba($neutral-color-white, 0.8) 100%), url("../img/nat-6x600.png");
   }
 
   &__form {
