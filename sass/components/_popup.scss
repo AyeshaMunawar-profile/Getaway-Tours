@@ -74,7 +74,7 @@
 
     &--1 {
       background-image: url("../img/nat-15x1200.png");
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: url("../img/nat-15x1920.jpg");
@@ -92,7 +92,7 @@
 
     &--2 {
       background-image: url("../img/nat-32x1200.png");
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: url("../img/nat-32x1920.jpg");

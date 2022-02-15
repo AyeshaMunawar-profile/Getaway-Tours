@@ -42,3 +42,7 @@ a {
   text-decoration: none;
 }
 
+::selection{
+  background-color: $primary-color__1;
+  color: $neutral-color-off-white__0;
+}
