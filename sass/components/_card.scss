@@ -66,7 +66,7 @@
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: linear-gradient(to right bottom, rgba($secondary-color__-1, 1), rgba($secondary-color__1, 1)), url("../img/nat-1x1000.jpg");
@@ -82,7 +82,7 @@
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: linear-gradient(to right bottom, rgba($tertiary-color__torquise__-1, 1), rgba($tertiary-color__torquise__1, 1)), url("../img/nat-32x1200.png");
@@ -98,7 +98,7 @@
       background-size: cover;
       background-position: center;
       background-blend-mode: hard-light;
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: linear-gradient(to right bottom, rgba($tertiary-color__red__-3, 1), rgba($tertiary-color__red__0, 1)), url("../img/nat-52x1200.png");
@@ -184,7 +184,8 @@
   }
 
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
     height: auto;
     background-color: $neutral-color-white;
     border-radius: $border-radius-medium;
