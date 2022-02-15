@@ -168,3 +168,8 @@ skills related to javascript while developing each section of the project.
 
 2) How to use resolution media queries to target high-resolution screens with 2x 
 3) How to combine multiple conditions in media queries 
+
+**Section 14: How to test for browser support using @support**
+1) How to use @support feature queries 
+2) Implement a graceful degradation on the selected properties 
+3) How to use backdrop-filter

@@ -5,11 +5,15 @@
   z-index: 2000;
   top: 0;
   left: 0;
-  background-color: rgba(34, 34, 34, 0.8);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(10px);
+  background-color: rgba(83, 83, 83, 0.8);
+  @supports (-webkit-backdrop-filter: blur(10px)) or ( backdrop-filter: blur(10px)) {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(83, 83, 83, 0.8);
+  }
 
   &__content {
     transition: all 0.4s ease-in-out .2s;
@@ -71,6 +75,7 @@
     &--1 {
       background-image: url("../img/nat-15x1200.png");
       @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: url("../img/nat-15x1920.jpg");
       }
@@ -88,6 +93,7 @@
     &--2 {
       background-image: url("../img/nat-32x1200.png");
       @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
       (min-width: 125em) {
         background-image: url("../img/nat-32x1920.jpg");
       }

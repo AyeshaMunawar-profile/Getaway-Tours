@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to left bottom, rgba(
                   $secondary-color__-2, .4), rgba(
                   $primary-color__-2, .5),
@@ -9,10 +9,15 @@
           rgba($primary-color__2, 0.75)), url("../img/nat-12x1500.png");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   overflow: hidden;
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
   // apple retina screen resolution for higher resolution
   @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   (min-width: 125em) {
     background-image: linear-gradient(to left bottom, rgba(
                     $secondary-color__-2, .4), rgba(
