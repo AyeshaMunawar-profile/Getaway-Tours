@@ -109,9 +109,12 @@ a {
   font-weight: 700;
   letter-spacing: 0.5rem;
   word-spacing: 0.5rem;
-  background-image: linear-gradient(to right bottom, #86c421, #2e631b);
-  -webkit-background-clip: text;
-  color: transparent; }
+  color: #508104; }
+  @supports (background-image: linear-gradient(to right bottom, #86c421, #2e631b)) and (-webkit-background-clip: text) {
+    .heading-secondary {
+      background-image: linear-gradient(to right bottom, #86c421, #2e631b);
+      -webkit-background-clip: text;
+      color: transparent; } }
   @media (min-width: 112.5em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -705,11 +708,17 @@ body {
     height: 20rem;
     float: left;
     background-color: #2e631b;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.5deg);
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .story__shape {
+        clip-path: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 56.25em) {
       .story__shape {
         width: 15rem;

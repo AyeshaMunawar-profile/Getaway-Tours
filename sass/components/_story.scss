@@ -8,16 +8,16 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
   //backface-visibility: hidden;
-  @include respond(tab-port){
+  @include respond(tab-port) {
     width: 100%;
     padding: 6rem 5rem 6rem 7rem;
   }
-  @include respond(phone){
+  @include respond(phone) {
     width: 100%;
     transform: skewX(0deg);
     padding: 4rem 3rem 4rem 4rem;
   }
-  @include respond(small-phone){
+  @include respond(small-phone) {
     text-align: center;
     padding: 5rem 3rem 5rem 4rem;
   }
@@ -27,22 +27,28 @@
     height: 20rem;
     float: left;
     background-color: #2e631b;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.5deg);
     position: relative;
-    @include respond(tab-port){
+    overflow: hidden;
+    border-radius: 50%;
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+    @include respond(tab-port) {
       width: 15rem;
       height: 15rem;
       transform: translateX(-4rem) skewX(12.5deg);
     }
-    @include respond(phone){
+    @include respond(phone) {
       width: 13rem;
       height: 13rem;
       transform: translateX(-2rem) skewX(0deg);
     }
-    @include respond(small-phone){
+    @include respond(small-phone) {
       width: 20rem;
       height: 20rem;
       transform: translateX(1rem) skewX(0deg);
@@ -59,10 +65,10 @@
 
   &__text {
     transform: skewX(12deg);
-    @include respond(phone){
+    @include respond(phone) {
       transform: skewX(0deg);
     }
-    @include respond(small-phone){
+    @include respond(small-phone) {
       margin-top: 25rem;
     }
   }

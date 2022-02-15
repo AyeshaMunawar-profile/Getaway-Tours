@@ -49,9 +49,13 @@
   font-weight: 700;
   letter-spacing: 0.5rem;
   word-spacing: 0.5rem;
-  background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__2);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: $primary-color__1;
+  @supports (background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__2)) and
+   (-webkit-background-clip: text) {
+    background-image: linear-gradient(to right bottom, $primary-color__-1, $primary-color__2);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
   @include respond(big-desktop) {
     font-size: 3rem;
   }
