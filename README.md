@@ -173,3 +173,11 @@ skills related to javascript while developing each section of the project.
 1) How to use @support feature queries 
 2) Implement a graceful degradation on the selected properties 
 3) How to use backdrop-filter
+
+**Section 15: I created a better build system for the project using NPM scripts**
+1) First I compile the sass code using node-sass `"compile:sass": "node-sass sass/main.scss css/style.comp.css"`
+2) Then I concatenate the compiled css with the vendor css I am using along with it `"concat:css": "concat -o css/style.concat.css css/icon-fonts.css css/style.comp.css"`
+3) Then I added prefix using autoprefixer 
+4) Then I used postcss-cli package to use autoprefixer `"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css"`
+5) I made the command for autoprefixer using postcss cli to test it for the last 10 versions of all browsers 
+6) Use npm-run-all to run all the tasks using single command for all browsers
